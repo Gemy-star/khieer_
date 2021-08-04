@@ -1,0 +1,91 @@
+@import "../scss/Media";
+@import "../scss/Variables";
+@import "../scss/mixins";
+
+
+.navbar{
+  width: 97%;
+  background-color: $blue_kheer;
+  height: 7vh;
+  align-content: center;
+  margin: 0 auto;
+  border-bottom-left-radius:20px ;
+  border-bottom-right-radius:20px ;
+  display: flex;
+  justify-content: space-between;
+
+  .icon{
+    font-size: 22px;
+    margin-inline: 1.3rem;
+    background-color: transparent;
+    color: $white;
+    &:hover{
+      color:  $green_kheer;
+      cursor: pointer;
+    }
+  }
+  input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    border-bottom-color: white;
+    background-color: transparent;
+    color: $white;
+  }::placeholder {
+     color: $white;
+  text-align: center;
+   }
+
+  .no-outline:focus {
+    outline: none;
+  }
+
+  nav{
+
+    margin-inline: 3.3rem;
+    .search_div{
+    form{
+      display: inline;
+
+    }
+      order: 1;
+      &__searchicon {
+        color: $white;
+        &:hover{
+          color: $green_kheer;
+        }
+      }
+    }
+  .container_nav {
+    order:2;
+    background-color: inherit;
+    ul {
+      list-style-type: none;
+      margin: 0.1rem;
+      padding: 0;
+      li {
+        margin-inline: 0.33rem;
+        display: inline;
+        a {
+          font-family: $font-family;
+          text-decoration: none;
+          cursor: pointer;
+          color: $white;
+          font-weight: 500;
+          font-size: 13px;
+          &:hover{
+            color: $green_kheer;
+          }
+        }
+      }
+
+    }
+  }
+
+  .nav{
+
+  }
+}
+
+}

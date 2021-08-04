@@ -1,0 +1,31 @@
+<div class="navbar">
+                <div class="search_div">
+                    <form>
+                      {% csrf_token %}
+<i class="fa fa-search" id="search-bar"></i>
+                    </form>
+                </div>
+                <nav>
+
+                    <div class="container_nav">
+                        <ul>
+                            <li><a href="#"/>الخدمات الألكترونية</a></li>
+                            <li><a href="#"/>إتصل بنا</a></li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+<script>
+    $(() => {
+        $("#search-bar").on('click' , (event) => {
+            event.preventDefault();
+            $("#search-bar").append(`
+            <input type="text" id="search" name="search"/>
+            `);
+        });
+    });
+</script>
+

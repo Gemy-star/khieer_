@@ -1,0 +1,30 @@
+{% load static %}
+  <header class="header">
+    <div class="overlay has-fade"></div>
+
+    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">
+          <img src="{% static 'images/logos/logo.png'  %}" alt="Easybank" />
+        </a>
+
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <div class="header__links hide-for-mobile">
+          <a href="#">الرئيسية</a><a href="#">عن المؤسسة</a><a href="#">إتصل بنا</a><a href="#">المدونة</a>
+        </div>
+
+        <a href="#" class="button header__cta hide-for-mobile">هبة الخير</a>
+    </nav>
+
+    <div class="header__menu has-fade">
+      <a href="">الرئيسية</a>
+      <a href="">عن المؤسسة</a>
+      <a href="">إتصل بنا</a>
+      <a href="">المدونة</a>
+    </div>
+
+  </header>

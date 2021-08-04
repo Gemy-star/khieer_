@@ -1,0 +1,109 @@
+@import "../scss/Media";
+@import "../scss/Variables";
+@import "../scss/mixins";
+
+.carousel {
+  @include breakpoint-down(meduim) {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+.carousel_section{
+  width: auto;
+  height: auto;
+  display: flex;
+  background-color: $lightGrayishBlue;
+}
+.carousel-caption {
+  text-align: right;
+  display: flex !important;
+      flex-direction: column;
+  @include breakpoint-up(large) {
+    margin-inline: 13rem;
+    justify-content: flex-start;
+    position: absolute;
+    right: -19%;
+    bottom: 204px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: -webkit-auto;
+    h3{
+      font-family: $font-family;
+      color: $green_kheer;
+      font-weight: bold;
+      font-size: $font-lg;
+    }&:hover{
+       color: $blue_kheer;
+     }
+
+    p{
+      font-family: $font-family;
+      color: $black_kheer;
+      font-weight: bold;
+      font-size: $font-med;
+      width: 21rem;
+    }&:hover{
+       color: $green_kheer;
+     }
+  }
+
+  @include breakpoint-down(medium){
+    display: inline-block;
+    position: absolute;
+    right: -51%;
+    bottom: -29px;
+    left: -7%;
+    z-index: 10;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    color: #fff;
+    text-align: center;
+    h3{
+      font-family: $font-family;
+      color: $green_kheer;
+      font-weight: bold;
+      font-size: $font-med;
+    }&:hover{
+       color: $blue_kheer;
+     }
+
+    p{
+      font-family: $font-family;
+      color: $black_kheer;
+      font-weight: bold;
+      font-size: $font-sm;
+    }&:hover{
+       color: $green_kheer;
+     }
+  }
+
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: $blue_kheer;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  background-image: none;
+  direction: ltr !important;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: $green_kheer;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: $green_kheer;
+}
+

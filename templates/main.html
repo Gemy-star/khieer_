@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load compress %}
+{% load static %}
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/logos/logo.ico' %}">
+    <meta charset="UTF-8">
+    <title>{% block title  %}    {% endblock title %}</title>
+        <link type="text/css" href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet" >
+        <link type="text/css" href="{% static 'css/style.css' %}" rel="stylesheet" >
+        <link type="text/css" href="{% static 'css/main.css' %}" rel="stylesheet" >
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+{% block style %}
+
+
+{% endblock style %}
+    {% compress css %}
+        <link type="text/x-scss" href="{% static 'scss/_Feature.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_Features.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_Footer.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_header.scss ' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_Home.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_intro.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_Media.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_mixins.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_navbar.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/_Variables.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'scss/styles.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
+</head>
+<body>
+    {% include 'navbar.html' %}
+{% include 'header.html' %}
+{% block body %}
+
+
+{% endblock body %}
+{% include 'footer.html' %}
+
+
+{% block script %}
+    <script>
+    const btnHamburger = document.querySelector('#btnHamburger');
+const body = document.querySelector('body');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
+const fadeElems = document.querySelectorAll('.has-fade');
+
+btnHamburger.addEventListener('click', function(){
+  console.log('click hamburger');
+
+  if(header.classList.contains('open')){ // Close Hamburger Menu
+    body.classList.remove('noscroll');
+    header.classList.remove('open');
+    fadeElems.forEach(function(element){
+      element.classList.remove('fade-in');
+      element.classList.add('fade-out');
+    });
+
+  }
+  else { // Open Hamburger Menu
+    body.classList.add('noscroll');
+    header.classList.add('open');
+    fadeElems.forEach(function(element){
+      element.classList.remove('fade-out');
+      element.classList.add('fade-in');
+    });
+
+  }
+});
+    </script>
+  <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+
+{% endblock script %}
+</body>
+</html>

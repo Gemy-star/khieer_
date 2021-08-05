@@ -31,6 +31,7 @@ COMPRESS_PRECOMPILERS = (
 )
 # Application definition
 
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -145,3 +146,4 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+COMPRESS_ROOT = STATIC_ROOT

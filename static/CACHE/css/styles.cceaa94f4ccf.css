@@ -1,4 +1,4 @@
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -13,7 +13,7 @@
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -28,11 +28,11 @@
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -47,7 +47,7 @@
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -62,21 +62,21 @@
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
-/* line 5, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 5, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 html {
   font-size: 100%;
   box-sizing: border-box;
   height: auto; }
 
-/* line 11, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 11, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 *, *::before, *::after {
   box-sizing: inherit; }
 
-/* line 15, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 15, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 body {
   margin: 0;
   padding: 0;
@@ -88,109 +88,109 @@ body {
   min-height: auto;
   overflow-x: hidden; }
   @media (min-width: 64em) {
-    /* line 15, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+    /* line 15, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
     body {
       font-size: 1.125rem; } }
-  /* line 30, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 30, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   body.noscroll {
     overflow: hidden; }
 
-/* line 35, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 35, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 h1, h2, h3 {
   font-weight: 300;
   line-height: 1.15;
   color: #2D6D93;
   margin-top: 0px; }
 
-/* line 42, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 42, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 h1 {
   font-size: 2.31rem;
   margin-bottom: 1.5rem; }
   @media (min-width: 64em) {
-    /* line 42, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+    /* line 42, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
     h1 {
       font-size: 3.25rem; } }
-/* line 51, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 51, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 h2 {
   font-size: 1.875rem;
   margin-bottom: 1.5625rem; }
   @media (min-width: 64em) {
-    /* line 51, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+    /* line 51, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
     h2 {
       font-size: 2.25rem;
       margin-bottom: 2.25rem; } }
-/* line 61, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 61, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 p {
   line-height: 1.5;
   margin-bottom: 2.25rem; }
 
-/* line 66, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 66, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 a, a:visited, a:hover {
   text-decoration: none; }
 
-/* line 71, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 71, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 .container {
   max-width: 69.375rem;
   margin: 0 auto; }
-  /* line 75, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 75, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .container--pall {
     padding-top: 4.375rem;
     padding-right: 1.5rem;
     padding-bottom: 4.375rem;
     padding-left: 1.5rem; }
     @media (min-width: 64em) {
-      /* line 75, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+      /* line 75, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
       .container--pall {
         padding-top: 6rem;
         padding-bottom: 6rem; } }
-  /* line 86, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 86, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .container--py {
     padding-top: 4.375rem;
     padding-bottom: 4.375rem; }
     @media (min-width: 64em) {
-      /* line 86, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+      /* line 86, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
       .container--py {
         padding-top: 6rem;
         padding-bottom: 6rem; } }
-  /* line 95, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 95, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .container--px {
     padding-right: 1.5rem;
     padding-left: 1.5rem; }
-  /* line 99, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 99, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .container--pt {
     padding-top: 4.375rem; }
     @media (min-width: 64em) {
-      /* line 99, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+      /* line 99, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
       .container--pt {
         padding-top: 6rem; } }
-  /* line 106, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 106, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .container--pr {
     padding-right: 1.5rem; }
-  /* line 109, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 109, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .container--pb {
     padding-bottom: 4.375rem; }
     @media (min-width: 64em) {
-      /* line 109, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+      /* line 109, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
       .container--pb {
         padding-bottom: 6rem; } }
-  /* line 116, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 116, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .container--pl {
     padding-left: 1.5rem; }
 
-/* line 122, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 122, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 .flex {
   display: flex; }
-  /* line 125, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 125, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .flex-jc-sb {
     justify-content: space-between; }
-  /* line 129, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 129, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .flex-jc-c {
     justify-content: center; }
-  /* line 133, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 133, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .flex-ai-c {
     align-items: center; }
 
-/* line 139, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+/* line 139, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
 button, .button {
   position: relative;
   display: inline-block;
@@ -204,7 +204,7 @@ button, .button {
   font-size: 0.875rem;
   transition: opacity 300ms ease-in-out;
   overflow: hidden; }
-  /* line 153, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 153, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   button::before, .button::before {
     content: "";
     position: absolute;
@@ -215,21 +215,21 @@ button, .button {
     background-color: rgba(255, 255, 255, 0.25);
     opacity: 0;
     transition: opacity 150ms ease-in-out; }
-  /* line 165, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 165, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   button:hover::before, .button:hover::before {
     opacity: 1; }
 
 @media (max-width: 63.9375em) {
-  /* line 172, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 172, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .hide-for-mobile {
     display: none; } }
 
 @media (min-width: 64em) {
-  /* line 178, c:/programming/work/khieer/khieer_/static/scss/_Home.scss */
+  /* line 178, c:/programming/work/khieer/khieer_/static/scss/Home.scss */
   .hide-for-desktop {
     display: none; } }
 
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -244,7 +244,7 @@ button, .button {
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -259,16 +259,16 @@ button, .button {
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
-/* line 4, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+/* line 4, c:/programming/work/khieer/khieer_/static/scss/header.scss */
 .NAVcontainer {
   width: 98% !important;
   height: auto; }
 
-/* line 8, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+/* line 8, c:/programming/work/khieer/khieer_/static/scss/header.scss */
 .header {
   display: flex;
   position: relative;
@@ -276,7 +276,7 @@ button, .button {
   width: 97% !important;
   height: auto !important; }
   @media (min-width: 64em) {
-    /* line 8, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+    /* line 8, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header {
       background-color: white;
       display: flex;
@@ -289,16 +289,16 @@ button, .button {
       border-top-left-radius: 30px;
       border-top-right-radius: 30px;
       border-radius: 30px; } }
-  /* line 31, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 31, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header.open .header__toggle > span:first-child {
     transform: rotate(45deg); }
-  /* line 35, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 35, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header.open .header__toggle > span:nth-child(2) {
     opacity: 0; }
-  /* line 39, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 39, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header.open .header__toggle > span:last-child {
     transform: rotate(-45deg); }
-  /* line 45, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 45, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header .overlay {
     opacity: 0;
     position: fixed;
@@ -307,23 +307,23 @@ button, .button {
     bottom: 0px;
     left: 0px;
     background-image: linear-gradient(#2D6D93, transparent); }
-  /* line 55, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 55, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header nav {
     position: relative;
     background-color: white;
     margin: 0 auto;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem; }
-  /* line 65, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 65, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header__logo img {
     width: 6.8125rem;
     height: 3.1rem; }
     @media (min-width: 64em) {
-      /* line 65, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+      /* line 65, c:/programming/work/khieer/khieer_/static/scss/header.scss */
       .header__logo img {
         width: auto;
         height: 4.5rem; } }
-  /* line 78, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 78, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header__toggle > span {
     display: block;
     width: 26px;
@@ -331,10 +331,10 @@ button, .button {
     background-color: #2D6D93;
     transition: all 300ms ease-in-out;
     transform-origin: 3px 1px; }
-    /* line 86, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+    /* line 86, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__toggle > span:not(:last-child) {
       margin-bottom: 5px; }
-  /* line 92, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 92, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header__menu {
     position: absolute;
     width: calc(100% - 3rem);
@@ -345,23 +345,23 @@ button, .button {
     padding: 1.625rem;
     border-radius: 5px;
     height: auto; }
-    /* line 103, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+    /* line 103, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__menu a {
       display: block;
       padding: 0.625rem;
       color: #5DBD7E;
       text-align: center; }
-  /* line 113, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+  /* line 113, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header__links a {
     position: relative;
     font-size: 1.125rem;
     color: #000000;
     transition: color 300ms ease-in-out;
     font-weight: 400; }
-    /* line 121, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+    /* line 121, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__links a:not(:last-child) {
       margin-right: 20px; }
-    /* line 125, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+    /* line 125, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__links a::before {
       content: "";
       display: block;
@@ -373,14 +373,14 @@ button, .button {
       background: linear-gradient(to right, #2D6D93, #5DBD7E);
       opacity: 0;
       transition: opacity 300ms ease-in-out; }
-    /* line 137, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+    /* line 137, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__links a:hover {
       color: #2D6D93; }
-      /* line 140, c:/programming/work/khieer/khieer_/static/scss/_header.scss */
+      /* line 140, c:/programming/work/khieer/khieer_/static/scss/header.scss */
       .header__links a:hover::before {
         opacity: 1; }
 
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -395,7 +395,7 @@ button, .button {
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -410,18 +410,18 @@ button, .button {
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
-/* line 4, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+/* line 4, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
 .footer {
   background-color: #2D6D93;
   color: white;
   padding: 2.5rem;
   text-align: center; }
   @media (min-width: 64em) {
-    /* line 10, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 10, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer .container {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 3fr;
@@ -429,102 +429,102 @@ button, .button {
       grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
       gap: 1rem;
       justify-items: start; } }
-  /* line 24, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+  /* line 24, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
   .footer a {
     color: white; }
-  /* line 28, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+  /* line 28, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
   .footer__logo {
     display: inline-block; }
-    /* line 30, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 30, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__logo img {
       height: auto;
       width: 3.8125rem; }
     @media (max-width: 63.9375em) {
-      /* line 28, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 28, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__logo {
         margin-bottom: 1.875rem; } }
     @media (min-width: 64em) {
-      /* line 28, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 28, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__logo {
         grid-area: logo; } }
   @media (max-width: 63.9375em) {
-    /* line 44, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 44, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__social {
       margin-bottom: 1.875rem; } }
   @media (min-width: 64em) {
-    /* line 44, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 44, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__social {
       display: flex;
       flex-direction: row; } }
-  /* line 54, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+  /* line 54, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
   .footer__social a {
     display: inline-block;
     height: 1.25rem; }
-    /* line 58, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 58, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__social a i {
       font-size: 18px;
       color: #f3f4f6;
       transition: fill 150ms ease-in-out; }
-      /* line 62, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 62, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__social a i:hover {
         background-color: #5DBD7E; }
-    /* line 67, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 67, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__social a:hover svg path {
       fill: #5DBD7E; }
-  /* line 72, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+  /* line 72, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
   .footer__social a:not(:last-child) {
     margin-inline-end: 1rem; }
-  /* line 78, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+  /* line 78, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
   .footer__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 0.9375rem; }
     @media (min-width: 64em) {
-      /* line 78, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 78, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__links {
         justify-content: space-between;
         align-items: start; } }
     @media (min-width: 64em) {
-      /* line 89, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 89, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__links.col1 {
         grid-area: links1; } }
     @media (max-width: 63.9375em) {
-      /* line 96, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 96, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__links.col2 {
         margin-bottom: 1.875rem; } }
     @media (min-width: 64em) {
-      /* line 96, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 96, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__links.col2 {
         grid-area: links2; } }
-    /* line 107, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 107, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__links a {
       line-height: 2.25;
       transition: color 150ms ease-in-out; }
-      /* line 111, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 111, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__links a:hover {
         color: #5DBD7E; }
   @media (min-width: 64em) {
-    /* line 117, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 117, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__cta {
       grid-area: cta;
       text-align: right;
       justify-self: end; } }
   @media (max-width: 63.9375em) {
-    /* line 125, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+    /* line 125, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
     .footer__cta a.button {
       margin-bottom: 1.875rem; } }
-  /* line 134, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+  /* line 134, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
   .footer__copyright {
     font-size: 0.8125rem;
     color: #9698a6; }
     @media (min-width: 64em) {
-      /* line 134, c:/programming/work/khieer/khieer_/static/scss/_Footer.scss */
+      /* line 134, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__copyright {
         grid-area: copyright;
         align-self: end;
         justify-self: end; } }
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -539,7 +539,7 @@ button, .button {
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -554,11 +554,11 @@ button, .button {
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
-/* line 6, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+/* line 6, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
 .navbar {
   width: 97%;
   background-color: #2D6D93;
@@ -569,17 +569,17 @@ button, .button {
   border-bottom-right-radius: 20px;
   display: flex;
   justify-content: space-between; }
-  /* line 17, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+  /* line 17, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar .icon {
     font-size: 22px;
     margin-inline: 1.3rem;
     background-color: transparent;
     color: white; }
-    /* line 22, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+    /* line 22, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar .icon:hover {
       color: #5DBD7E;
       cursor: pointer; }
-  /* line 27, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+  /* line 27, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar input {
     border-top-style: hidden;
     border-right-style: hidden;
@@ -588,42 +588,42 @@ button, .button {
     border-bottom-color: white;
     background-color: transparent;
     color: white; }
-  /* line 35, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+  /* line 35, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar ::placeholder {
     color: white;
     text-align: center; }
-  /* line 40, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+  /* line 40, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar .no-outline:focus {
     outline: none; }
-  /* line 44, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+  /* line 44, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar nav {
     margin-inline: 3.3rem; }
-    /* line 47, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+    /* line 47, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar nav .search_div {
       order: 1; }
-      /* line 48, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+      /* line 48, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .search_div form {
         display: inline; }
-      /* line 53, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+      /* line 53, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .search_div__searchicon {
         color: white; }
-        /* line 55, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+        /* line 55, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
         .navbar nav .search_div__searchicon:hover {
           color: #5DBD7E; }
-    /* line 60, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+    /* line 60, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar nav .container_nav {
       order: 2;
       background-color: inherit; }
-      /* line 63, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+      /* line 63, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .container_nav ul {
         list-style-type: none;
         margin: 0.1rem;
         padding: 0; }
-        /* line 67, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+        /* line 67, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
         .navbar nav .container_nav ul li {
           margin-inline: 0.33rem;
           display: inline; }
-          /* line 70, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+          /* line 70, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
           .navbar nav .container_nav ul li a {
             font-family: "Almarai", sans-serif;
             text-decoration: none;
@@ -631,11 +631,11 @@ button, .button {
             color: white;
             font-weight: 500;
             font-size: 13px; }
-            /* line 77, c:/programming/work/khieer/khieer_/static/scss/_navbar.scss */
+            /* line 77, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
             .navbar nav .container_nav ul li a:hover {
               color: #5DBD7E; }
 
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -650,7 +650,7 @@ button, .button {
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -665,31 +665,31 @@ button, .button {
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
 @media (max-width: null) {
-  /* line 5, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+  /* line 5, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
   .carousel {
     width: 80%;
     height: auto;
     overflow: hidden; } }
 
-/* line 12, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 12, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel_section {
   width: auto;
   height: auto;
   display: flex;
   background-color: #f3f4f6; }
 
-/* line 18, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 18, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-caption {
   text-align: right;
   display: flex !important;
   flex-direction: column; }
   @media (min-width: 64em) {
-    /* line 18, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+    /* line 18, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
     .carousel-caption {
       margin-inline: 13rem;
       justify-content: flex-start;
@@ -702,27 +702,27 @@ button, .button {
       padding-bottom: 20px;
       color: #fff;
       text-align: -webkit-auto; }
-      /* line 34, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 34, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption h3 {
         font-family: "Almarai", sans-serif;
         color: #5DBD7E;
         font-weight: bold;
         font-size: 1.25rem; }
-      /* line 39, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 39, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #2D6D93; }
-      /* line 43, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 43, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption p {
         font-family: "Almarai", sans-serif;
         color: #000000;
         font-weight: bold;
         font-size: 1.125rem;
         width: 21rem; }
-      /* line 49, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 49, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #5DBD7E; } }
   @media (max-width: 63.9375em) {
-    /* line 18, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+    /* line 18, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
     .carousel-caption {
       display: inline-block;
       position: absolute;
@@ -734,25 +734,25 @@ button, .button {
       padding-bottom: 15px;
       color: #fff;
       text-align: center; }
-      /* line 65, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 65, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption h3 {
         font-family: "Almarai", sans-serif;
         color: #5DBD7E;
         font-weight: bold;
         font-size: 1.125rem; }
-      /* line 70, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 70, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #2D6D93; }
-      /* line 74, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 74, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption p {
         font-family: "Almarai", sans-serif;
         color: #000000;
         font-weight: bold;
         font-size: 0.875rem; }
-      /* line 79, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 79, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #5DBD7E; } }
-/* line 86, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 86, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
@@ -763,19 +763,19 @@ button, .button {
   background-image: none;
   direction: ltr !important; }
 
-/* line 97, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 97, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-next-icon:after {
   content: '>';
   font-size: 40px;
   color: #5DBD7E; }
 
-/* line 104, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 104, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 40px;
   color: #5DBD7E; }
 
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -790,7 +790,7 @@ button, .button {
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -805,15 +805,15 @@ button, .button {
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
-/* line 4, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+/* line 4, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
 .container {
   max-width: 69.375rem;
   margin: 0 auto; }
-  /* line 8, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 8, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .container--pall {
     text-align: start;
     padding-top: 4.375rem;
@@ -821,66 +821,66 @@ button, .button {
     padding-bottom: 4.375rem;
     padding-left: 1.5rem; }
     @media (max-width: 39.9375em) {
-      /* line 8, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 8, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .container--pall {
         text-align: center; } }
     @media (min-width: 64em) {
-      /* line 8, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 8, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .container--pall {
         padding-top: 6rem;
         padding-bottom: 6rem; } }
-/* line 23, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+/* line 23, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
 .feature {
   background-color: white;
   text-align: center; }
   @media (min-width: 40em) {
-    /* line 23, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 23, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature {
       text-align: left; } }
-  /* line 31, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 31, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__intro {
     margin-bottom: 3.75rem; }
-    /* line 33, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 33, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__intro p {
       font-family: "Almarai", sans-serif;
       color: #000000;
       font-weight: 400; }
     @media (min-width: 64em) {
-      /* line 31, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 31, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__intro {
         width: 60%; } }
   @media (min-width: 40em) {
-    /* line 43, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 43, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__grid {
       display: flex;
       flex-wrap: wrap; } }
-  /* line 51, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 51, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__item {
     padding: 0.9375rem; }
     @media (min-width: 40em) {
-      /* line 51, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 51, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__item {
         flex: 0 0 50%; } }
     @media (min-width: 64em) {
-      /* line 51, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 51, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__item {
         flex: 1; } }
-  /* line 63, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 63, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__icon {
     margin-bottom: 1.875rem; }
-    /* line 65, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 65, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__icon img {
       height: 29vh;
       width: 19rem; }
     @media (min-width: 64em) {
-      /* line 63, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 63, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__icon {
         margin-bottom: 2.75rem; }
-        /* line 71, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+        /* line 71, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
         .feature__icon img {
           width: 27rem;
           height: 49vh; } }
-  /* line 79, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 79, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__title {
     display: flex;
     text-align: center;
@@ -894,21 +894,21 @@ button, .button {
     margin-bottom: 1rem;
     align-content: center; }
     @media (min-width: 64em) {
-      /* line 79, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 79, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title {
         font-size: 1.5rem;
         margin-bottom: 1.5rem; } }
-    /* line 95, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 95, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__title a {
       position: relative;
       font-size: 1.125rem;
       color: #000000;
       transition: color 300ms ease-in-out;
       font-weight: 400; }
-      /* line 103, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 103, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title a:not(:last-child) {
         margin-right: 20px; }
-      /* line 107, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 107, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title a::before {
         content: "";
         display: block;
@@ -920,18 +920,18 @@ button, .button {
         background: linear-gradient(to right, #2D6D93, #5DBD7E);
         opacity: 0;
         transition: opacity 300ms ease-in-out; }
-      /* line 119, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 119, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title a:hover {
         color: #2D6D93; }
-        /* line 122, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+        /* line 122, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
         .feature__title a:hover::before {
           opacity: 1; }
-  /* line 130, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 130, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__description {
     font-size: 0.875rem;
     line-height: 1.5; }
 
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -946,7 +946,7 @@ button, .button {
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -961,15 +961,15 @@ button, .button {
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
-/* line 4, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+/* line 4, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
 .container {
   max-width: 69.375rem;
   margin: 0 auto; }
-  /* line 8, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 8, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .container--pall {
     text-align: start;
     padding-top: 4.375rem;
@@ -977,66 +977,66 @@ button, .button {
     padding-bottom: 4.375rem;
     padding-left: 1.5rem; }
     @media (max-width: 39.9375em) {
-      /* line 8, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 8, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .container--pall {
         text-align: center; } }
     @media (min-width: 64em) {
-      /* line 8, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 8, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .container--pall {
         padding-top: 6rem;
         padding-bottom: 6rem; } }
-/* line 23, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+/* line 23, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
 .feature {
   background-color: white;
   text-align: center; }
   @media (min-width: 40em) {
-    /* line 23, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 23, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature {
       text-align: left; } }
-  /* line 31, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 31, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__intro {
     margin-bottom: 3.75rem; }
-    /* line 33, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 33, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__intro p {
       font-family: "Almarai", sans-serif;
       color: #000000;
       font-weight: 400; }
     @media (min-width: 64em) {
-      /* line 31, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 31, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__intro {
         width: 60%; } }
   @media (min-width: 40em) {
-    /* line 43, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 43, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__grid {
       display: flex;
       flex-wrap: wrap; } }
-  /* line 51, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 51, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__item {
     padding: 0.9375rem; }
     @media (min-width: 40em) {
-      /* line 51, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 51, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__item {
         flex: 0 0 50%; } }
     @media (min-width: 64em) {
-      /* line 51, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 51, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__item {
         flex: 1; } }
-  /* line 63, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 63, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__icon {
     margin-bottom: 1.875rem; }
-    /* line 65, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 65, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__icon img {
       height: 29vh;
       width: 19rem; }
     @media (min-width: 64em) {
-      /* line 63, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 63, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__icon {
         margin-bottom: 2.75rem; }
-        /* line 71, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+        /* line 71, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
         .feature__icon img {
           width: 27rem;
           height: 49vh; } }
-  /* line 79, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 79, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__title {
     display: flex;
     text-align: center;
@@ -1050,21 +1050,21 @@ button, .button {
     margin-bottom: 1rem;
     align-content: center; }
     @media (min-width: 64em) {
-      /* line 79, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 79, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title {
         font-size: 1.5rem;
         margin-bottom: 1.5rem; } }
-    /* line 95, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+    /* line 95, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
     .feature__title a {
       position: relative;
       font-size: 1.125rem;
       color: #000000;
       transition: color 300ms ease-in-out;
       font-weight: 400; }
-      /* line 103, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 103, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title a:not(:last-child) {
         margin-right: 20px; }
-      /* line 107, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 107, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title a::before {
         content: "";
         display: block;
@@ -1076,13 +1076,13 @@ button, .button {
         background: linear-gradient(to right, #2D6D93, #5DBD7E);
         opacity: 0;
         transition: opacity 300ms ease-in-out; }
-      /* line 119, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+      /* line 119, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
       .feature__title a:hover {
         color: #2D6D93; }
-        /* line 122, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+        /* line 122, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
         .feature__title a:hover::before {
           opacity: 1; }
-  /* line 130, c:/programming/work/khieer/khieer_/static/scss/_Features.scss */
+  /* line 130, c:/programming/work/khieer/khieer_/static/scss/Features.scss */
   .feature__description {
     font-size: 0.875rem;
     line-height: 1.5; }

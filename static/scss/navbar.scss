@@ -1,19 +1,23 @@
-@import "../scss/Media";
-@import "../scss/Variables";
-@import "../scss/mixins";
+@import "Media";
+@import "Variables";
+@import "mixins";
 
 
 .navbar{
+  padding: 10px;
   width: 97%;
   background-color: $blue_kheer;
   height: 7vh;
   align-content: center;
   margin: 0 auto;
-  border-bottom-left-radius:20px ;
-  border-bottom-right-radius:20px ;
+  border-bottom-left-radius:20px !important;
+  border-bottom-right-radius:20px !important; ;
   display: flex;
   justify-content: space-between;
-
+.head-nav {
+  display: flex;
+  justify-content: flex-end;
+}
   .icon{
     font-size: 22px;
     margin-inline: 1.3rem;
@@ -42,8 +46,7 @@
   }
 
   nav{
-
-    margin-inline: 3.3rem;
+display: flex;
     .search_div{
     form{
       display: inline;

@@ -447,35 +447,33 @@ button, .button {
       /* line 28, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
       .footer__logo {
         grid-area: logo; } }
-  /* line 44, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-  .footer__social {
+  @media (max-width: 63.9375em) {
+    /* line 44, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
+    .footer__social {
+      margin-bottom: 1.875rem; } }
+  @media (min-width: 64em) {
+    /* line 44, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
+    .footer__social {
+      display: flex;
+      flex-direction: row; } }
+  /* line 54, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
+  .footer__social a {
     display: flex;
-    flex-direction: row; }
-    @media (max-width: 63.9375em) {
-      /* line 44, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-      .footer__social {
-        margin-bottom: 1.875rem; } }
-    @media (min-width: 64em) {
-      /* line 44, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-      .footer__social {
-        grid-area: social;
-        align-self: end; } }
-    /* line 56, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-    .footer__social a {
-      display: inline-block;
-      height: 1.25rem; }
-      /* line 60, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-      .footer__social a svg path {
-        transition: fill 150ms ease-in-out; }
-        /* line 62, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-        .footer__social a svg path:hover {
-          background-color: #5DBD7E; }
-      /* line 67, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-      .footer__social a:hover svg path {
-        fill: #5DBD7E; }
-    /* line 72, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
-    .footer__social a:not(:last-child) {
-      margin-inline-end: 1rem; }
+    height: 1.25rem; }
+    /* line 58, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
+    .footer__social a i {
+      font-size: 18px;
+      color: #f3f4f6;
+      transition: fill 150ms ease-in-out; }
+      /* line 62, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
+      .footer__social a i:hover {
+        background-color: #5DBD7E; }
+    /* line 67, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
+    .footer__social a:hover svg path {
+      fill: #5DBD7E; }
+  /* line 72, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
+  .footer__social a:not(:last-child) {
+    margin-inline-end: 1rem; }
   /* line 78, c:/programming/work/khieer/khieer_/static/scss/Footer.scss */
   .footer__links {
     display: flex;
@@ -571,17 +569,21 @@ button, .button {
   border-bottom-right-radius: 20px;
   display: flex;
   justify-content: space-between; }
-  /* line 17, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 16, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  .navbar .head-nav {
+    display: flex;
+    justify-content: flex-end; }
+  /* line 20, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar .icon {
     font-size: 22px;
     margin-inline: 1.3rem;
     background-color: transparent;
     color: white; }
-    /* line 22, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+    /* line 25, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar .icon:hover {
       color: #5DBD7E;
       cursor: pointer; }
-  /* line 27, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 30, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar input {
     border-top-style: hidden;
     border-right-style: hidden;
@@ -590,42 +592,42 @@ button, .button {
     border-bottom-color: white;
     background-color: transparent;
     color: white; }
-  /* line 35, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 38, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar ::placeholder {
     color: white;
     text-align: center; }
-  /* line 40, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 43, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar .no-outline:focus {
     outline: none; }
-  /* line 44, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 47, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar nav {
-    margin-inline: 3.3rem; }
-    /* line 47, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+    display: flex; }
+    /* line 49, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar nav .search_div {
       order: 1; }
-      /* line 48, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+      /* line 50, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .search_div form {
         display: inline; }
-      /* line 53, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+      /* line 55, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .search_div__searchicon {
         color: white; }
-        /* line 55, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+        /* line 57, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
         .navbar nav .search_div__searchicon:hover {
           color: #5DBD7E; }
-    /* line 60, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+    /* line 62, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar nav .container_nav {
       order: 2;
       background-color: inherit; }
-      /* line 63, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+      /* line 65, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .container_nav ul {
         list-style-type: none;
         margin: 0.1rem;
         padding: 0; }
-        /* line 67, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+        /* line 69, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
         .navbar nav .container_nav ul li {
           margin-inline: 0.33rem;
           display: inline; }
-          /* line 70, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+          /* line 72, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
           .navbar nav .container_nav ul li a {
             font-family: "Almarai", sans-serif;
             text-decoration: none;
@@ -633,7 +635,7 @@ button, .button {
             color: white;
             font-weight: 500;
             font-size: 13px; }
-            /* line 77, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+            /* line 79, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
             .navbar nav .container_nav ul li a:hover {
               color: #5DBD7E; }
 
@@ -718,8 +720,9 @@ button, .button {
         font-family: "Almarai", sans-serif;
         color: #000000;
         font-weight: bold;
-        font-size: 1.125rem; }
-      /* line 48, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+        font-size: 1.125rem;
+        width: 21rem; }
+      /* line 49, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #5DBD7E; } }
   @media (max-width: 63.9375em) {
@@ -735,25 +738,25 @@ button, .button {
       padding-bottom: 15px;
       color: #fff;
       text-align: center; }
-      /* line 64, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+      /* line 65, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption h3 {
         font-family: "Almarai", sans-serif;
         color: #5DBD7E;
         font-weight: bold;
         font-size: 1.125rem; }
-      /* line 69, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+      /* line 70, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #2D6D93; }
-      /* line 73, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+      /* line 74, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption p {
         font-family: "Almarai", sans-serif;
         color: #000000;
         font-weight: bold;
         font-size: 0.875rem; }
-      /* line 78, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+      /* line 79, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #5DBD7E; } }
-/* line 85, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+/* line 86, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
@@ -764,13 +767,13 @@ button, .button {
   background-image: none;
   direction: ltr !important; }
 
-/* line 96, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+/* line 97, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-next-icon:after {
   content: '>';
   font-size: 40px;
   color: #5DBD7E; }
 
-/* line 103, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
+/* line 104, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 40px;

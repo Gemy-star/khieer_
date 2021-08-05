@@ -1,4 +1,4 @@
-/* line 1, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 1, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .has-fade {
   visibility: hidden; }
 
@@ -13,7 +13,7 @@
     visibility: visible;
     opacity: 1; } }
 
-/* line 19, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 19, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-in {
   animation: fade-in 200ms ease-in-out forwards; }
 
@@ -28,31 +28,31 @@
     visibility: hidden;
     opacity: 0; } }
 
-/* line 37, c:/programming/work/khieer/khieer_/static/scss/_Media.scss */
+/* line 37, c:/programming/work/khieer/khieer_/static/scss/Media.scss */
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards; }
 
 @media (max-width: null) {
-  /* line 5, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+  /* line 5, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
   .carousel {
     width: 80%;
     height: auto;
     overflow: hidden; } }
 
-/* line 12, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 12, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel_section {
   width: auto;
   height: auto;
   display: flex;
   background-color: #f3f4f6; }
 
-/* line 18, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 18, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-caption {
   text-align: right;
   display: flex !important;
   flex-direction: column; }
   @media (min-width: 64em) {
-    /* line 18, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+    /* line 18, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
     .carousel-caption {
       margin-inline: 13rem;
       justify-content: flex-start;
@@ -65,26 +65,26 @@
       padding-bottom: 20px;
       color: #fff;
       text-align: -webkit-auto; }
-      /* line 34, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 34, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption h3 {
         font-family: "Almarai", sans-serif;
         color: #5DBD7E;
         font-weight: bold;
         font-size: 1.25rem; }
-      /* line 39, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 39, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #2D6D93; }
-      /* line 43, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 43, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption p {
         font-family: "Almarai", sans-serif;
         color: #000000;
         font-weight: bold;
         font-size: 1.125rem; }
-      /* line 48, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 48, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #5DBD7E; } }
   @media (max-width: 63.9375em) {
-    /* line 18, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+    /* line 18, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
     .carousel-caption {
       display: inline-block;
       position: absolute;
@@ -96,25 +96,25 @@
       padding-bottom: 15px;
       color: #fff;
       text-align: center; }
-      /* line 64, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 64, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption h3 {
         font-family: "Almarai", sans-serif;
         color: #5DBD7E;
         font-weight: bold;
         font-size: 1.125rem; }
-      /* line 69, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 69, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #2D6D93; }
-      /* line 73, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 73, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption p {
         font-family: "Almarai", sans-serif;
         color: #000000;
         font-weight: bold;
         font-size: 0.875rem; }
-      /* line 78, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+      /* line 78, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
       .carousel-caption:hover {
         color: #5DBD7E; } }
-/* line 85, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 85, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
@@ -125,13 +125,13 @@
   background-image: none;
   direction: ltr !important; }
 
-/* line 96, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 96, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-next-icon:after {
   content: '>';
   font-size: 40px;
   color: #5DBD7E; }
 
-/* line 103, c:/programming/work/khieer/khieer_/static/scss/_intro.scss */
+/* line 103, c:/programming/work/khieer/khieer_/static/scss/intro.scss */
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 40px;

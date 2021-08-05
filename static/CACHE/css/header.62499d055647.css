@@ -119,18 +119,19 @@
       display: block;
       padding: 0.625rem;
       color: #5DBD7E;
-      text-align: center; }
-  /* line 113, c:/programming/work/khieer/khieer_/static/scss/header.scss */
+      text-align: center;
+      margin-inline: 2rem; }
+  /* line 114, c:/programming/work/khieer/khieer_/static/scss/header.scss */
   .header__links a {
     position: relative;
     font-size: 1.125rem;
     color: #000000;
     transition: color 300ms ease-in-out;
     font-weight: 400; }
-    /* line 121, c:/programming/work/khieer/khieer_/static/scss/header.scss */
+    /* line 122, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__links a:not(:last-child) {
       margin-right: 20px; }
-    /* line 125, c:/programming/work/khieer/khieer_/static/scss/header.scss */
+    /* line 126, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__links a::before {
       content: "";
       display: block;
@@ -142,9 +143,9 @@
       background: linear-gradient(to right, #2D6D93, #5DBD7E);
       opacity: 0;
       transition: opacity 300ms ease-in-out; }
-    /* line 137, c:/programming/work/khieer/khieer_/static/scss/header.scss */
+    /* line 138, c:/programming/work/khieer/khieer_/static/scss/header.scss */
     .header__links a:hover {
       color: #2D6D93; }
-      /* line 140, c:/programming/work/khieer/khieer_/static/scss/header.scss */
+      /* line 141, c:/programming/work/khieer/khieer_/static/scss/header.scss */
       .header__links a:hover::before {
         opacity: 1; }

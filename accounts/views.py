@@ -7,44 +7,44 @@ from django.core import serializers
 from django.core.files.storage import FileSystemStorage
 
 
-# def check_email(request):
-#     if request.method == 'POST' and request.is_ajax:
-#         email = request.POST.get('email')
-#         user_obj = User.objects.get(email=email)
-#         if user_obj.pk:
-#             return JsonResponse(
-#                 {"status": 1, "user_name": user_obj.first_name, "user_id": user_obj.pk, "user_type": user_obj.user_type,
-#                  "email": user_obj.email})
-#         else:
-#             return JsonResponse({"status": 0})
+def check_email(request):
+    if request.method == 'POST' and request.is_ajax:
+        email = request.POST.get('email')
+        user_obj = User.objects.get(email=email)
+        if user_obj.pk:
+            return JsonResponse(
+                {"status": 1, "user_name": user_obj.first_name, "user_id": user_obj.pk, "user_type": user_obj.user_type,
+                 "email": user_obj.email})
+        else:
+            return JsonResponse({"status": 0})
 
 
-# def loginPage(request):
-#     if request.method == 'POST' and request.is_ajax:
-#         email = request.POST.get('email')
-#         password = request.POST.get('password')
+def loginPage(request):
+    if request.method == 'POST' and request.is_ajax:
+        email = request.POST.get('email')
+        password = request.POST.get('password')
 
-#         user = authenticate(request, username=email, password=password)
+        user = authenticate(request, username=email, password=password)
 
-#         if user is not None:
-#             if user.user_type == 2:
-#                 login(request, user)
-#                 return JsonResponse({"status": 'done', "user_pk": user.pk})
-#             else:
-#                 login(request, user)
-#                 return JsonResponse({"status": 'done', "user_pk": user.pk})
-
-
-#         else:
-#             return JsonResponse({"status": 'Username OR password is incorrect'})
-
-#     context = {}
-#     return render(request, 'accounts/login.html', context)
+        if user is not None:
+            if user.user_type == 2:
+                login(request, user)
+                return JsonResponse({"status": 'done', "user_pk": user.pk})
+            else:
+                login(request, user)
+                return JsonResponse({"status": 'done', "user_pk": user.pk})
 
 
-# def logoutUser(request):
-#     logout(request)
-#     return redirect('login')
+        else:
+            return JsonResponse({"status": 'Username OR password is incorrect'})
+
+    context = {}
+    return render(request, 'accounts/login.html', context)
+
+
+def logoutUser(request):
+    logout(request)
+    return redirect('login')
 
 
 # def register_trainer(request):

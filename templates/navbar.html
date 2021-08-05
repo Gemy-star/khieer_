@@ -2,10 +2,13 @@
                 <div class="search_div">
                     <form>
                       {% csrf_token %}
-<i class="fa fa-search" id="search-bar"></i>
+<i class="fa fa-search" id="search-icon"></i>
+                        <input id="search-bar" type="text" placeholder="إبحث"  name="search-bar"/>
+
                     </form>
                 </div>
-                <nav>
+<div class="head-nav">
+                    <nav>
 
                     <div class="container_nav">
                         <ul>
@@ -16,15 +19,21 @@
                     </div>
 
                 </nav>
+
+</div>
             </div>
 
 <script>
     $(() => {
-        $("#search-bar").on('click' , (event) => {
+        $("#search-bar").hide()
+        $("#search-icon").on('click' , (event) => {
             event.preventDefault();
-            $("#search-bar").append(`
-            <input type="text" id="search" name="search"/>
-            `);
+            $("#search-bar").show();
+
+        });
+           $("#search-icon").on('blur' , (event) => {
+               event.preventDefault();
+            $("#search-bar").hide();
         });
     });
 </script>

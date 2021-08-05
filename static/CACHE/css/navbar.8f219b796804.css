@@ -34,26 +34,31 @@
 
 /* line 6, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
 .navbar {
+  padding: 10px;
   width: 97%;
   background-color: #2D6D93;
   height: 7vh;
   align-content: center;
   margin: 0 auto;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
   display: flex;
   justify-content: space-between; }
   /* line 17, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  .navbar .head-nav {
+    display: flex;
+    justify-content: flex-end; }
+  /* line 21, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar .icon {
     font-size: 22px;
     margin-inline: 1.3rem;
     background-color: transparent;
     color: white; }
-    /* line 22, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+    /* line 26, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar .icon:hover {
       color: #5DBD7E;
       cursor: pointer; }
-  /* line 27, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 31, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar input {
     border-top-style: hidden;
     border-right-style: hidden;
@@ -62,42 +67,42 @@
     border-bottom-color: white;
     background-color: transparent;
     color: white; }
-  /* line 35, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 39, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar ::placeholder {
     color: white;
     text-align: center; }
-  /* line 40, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 44, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar .no-outline:focus {
     outline: none; }
-  /* line 44, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+  /* line 48, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
   .navbar nav {
-    margin-inline: 3.3rem; }
-    /* line 47, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+    display: flex; }
+    /* line 50, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar nav .search_div {
       order: 1; }
-      /* line 48, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+      /* line 51, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .search_div form {
         display: inline; }
-      /* line 53, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+      /* line 56, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .search_div__searchicon {
         color: white; }
-        /* line 55, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+        /* line 58, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
         .navbar nav .search_div__searchicon:hover {
           color: #5DBD7E; }
-    /* line 60, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+    /* line 63, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
     .navbar nav .container_nav {
       order: 2;
       background-color: inherit; }
-      /* line 63, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+      /* line 66, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
       .navbar nav .container_nav ul {
         list-style-type: none;
         margin: 0.1rem;
         padding: 0; }
-        /* line 67, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+        /* line 70, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
         .navbar nav .container_nav ul li {
           margin-inline: 0.33rem;
           display: inline; }
-          /* line 70, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+          /* line 73, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
           .navbar nav .container_nav ul li a {
             font-family: "Almarai", sans-serif;
             text-decoration: none;
@@ -105,6 +110,6 @@
             color: white;
             font-weight: 500;
             font-size: 13px; }
-            /* line 77, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
+            /* line 80, c:/programming/work/khieer/khieer_/static/scss/navbar.scss */
             .navbar nav .container_nav ul li a:hover {
               color: #5DBD7E; }

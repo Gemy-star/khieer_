@@ -1,0 +1,151 @@
+.has-fade {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+@media (max-width: ) {
+  .carousel {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+.carousel_section {
+  width: auto;
+  height: auto;
+  display: flex;
+  background-color: #f3f4f6;
+}
+
+.carousel-caption {
+  text-align: right;
+  display: flex !important;
+  flex-direction: column;
+}
+@media (min-width: 64em) {
+  .carousel-caption {
+    margin-inline: 13rem;
+    justify-content: flex-start;
+    position: absolute;
+    right: -19%;
+    bottom: 204px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: -webkit-auto;
+  }
+  .carousel-caption h3 {
+    font-family: "Almarai", sans-serif;
+    color: #5DBD7E;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  .carousel-caption:hover {
+    color: #2D6D93;
+  }
+  .carousel-caption p {
+    font-family: "Almarai", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.125rem;
+    width: 21rem;
+  }
+  .carousel-caption:hover {
+    color: #5DBD7E;
+  }
+}
+@media (max-width: 63.9375em) {
+  .carousel-caption {
+    display: inline-block;
+    position: absolute;
+    right: -51%;
+    bottom: -29px;
+    left: -7%;
+    z-index: 10;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    color: #fff;
+    text-align: center;
+  }
+  .carousel-caption h3 {
+    font-family: "Almarai", sans-serif;
+    color: #5DBD7E;
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+  .carousel-caption:hover {
+    color: #2D6D93;
+  }
+  .carousel-caption p {
+    font-family: "Almarai", sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  .carousel-caption:hover {
+    color: #5DBD7E;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: #2D6D93;
+  background-size: 50%, 50%;
+  border-radius: 50%;
+  background-image: none;
+  direction: ltr !important;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 40px;
+  color: #5DBD7E;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 40px;
+  color: #5DBD7E;
+}
+
+/*# sourceMappingURL=intro.css.map */

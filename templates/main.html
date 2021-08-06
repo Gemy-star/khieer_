@@ -21,17 +21,19 @@
 
 
 {% endblock style %}
-        <link type="text/x-scss" href="{% static 'scss/Feature.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/Features.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/Footer.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/header.css ' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/Home.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/intro.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/Media.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/mixins.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/navbar.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/Variables.css' %}" rel="stylesheet" media="screen">
-        <link type="text/x-scss" href="{% static 'scss/styles.css' %}" rel="stylesheet" media="screen">
+{% compress css %}
+        <link type="text/x-scss" href="{% static 'Feature.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'Features.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'Footer.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'header.scss ' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'Home.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'intro.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'Media.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'mixins.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'navbar.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'Variables.scss' %}" rel="stylesheet" media="screen">
+        <link type="text/x-scss" href="{% static 'styles.scss' %}" rel="stylesheet" media="screen">
+{% endcompress css %}
 </head>
 <body>
     {% include 'navbar.html' %}

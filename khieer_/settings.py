@@ -26,9 +26,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'django_libsass.SassCompiler'),
-)
+
 # Application definition
 
 
@@ -48,9 +46,7 @@ INSTALLED_APPS = [
     'xhtml2pdf',
 ]
 
-STATICFILES_FINDERS = [
-    'compressor.finders.CompressorFinder',
-]
+
 AUTH_USER_MODEL = 'accounts.User'
 
 MIDDLEWARE = [
@@ -146,4 +142,13 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_FINDERS = [
+    'compressor.finders.CompressorFinder',
+]
+COMPRESS_PRECOMPILERS = (
+    ('text/x-scss', 'django_libsass.SassCompiler'),
+)
 COMPRESS_ROOT = STATIC_ROOT
+COMPRESS_OFFLINE = True
+LIBSASS_OUTPUT_STYLE = 'compressed'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'

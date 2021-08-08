@@ -68,7 +68,7 @@
 
                                 </div>
                 </li>
-{% if request.user == null %}
+{% if request.user.user_type == null %}
 <li><a style="font-size: 14px;  " href="{% url 'reg-vol' %}" class="nav-link text-cursive">
                           إنضم معنا</a></li>
                 {% endif %}

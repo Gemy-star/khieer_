@@ -1,7 +1,35 @@
-from django.http import JsonResponse
+from datetime import datetime
+from django.core.files.storage import FileSystemStorage
+from django.http import JsonResponse, HttpResponse
+from django.template.loader import get_template
+from django.views import View
 from accounts.models import User
-from django.shortcuts import render
-from khieer.models import Contact, HebaKheer, TechnicalSupport
+from django.shortcuts import render, redirect
+from khieer.models import Contact, HebaKheer, TechnicalSupport, Trainer, Course, Category, Volunteer, CourseRequest
+from khieer_.utils import render_to_pdf
+
+
+def add_greenCourse(request):
+    trainer = Trainer.objects.all()
+    category = Category.objects.all()
+    if request.method == 'POST' and request.FILES['logo']:
+        name = request.POST.get('name')
+        description = request.POST.get('description')
+        start = request.POST.get('start')
+        end = request.POST.get('end')
+        trainer = request.POST.get('trainer')
+        total = request.POST.get('total_hour')
+        category = request.POST.get('cat')
+        link = request.POST.get('link')
+        logo = request.FILES['logo']
+        fs = FileSystemStorage()
+        fs.save(logo.name, logo)
+        course = Course(name=name, description=description, logo=logo, link=link, duration=total, category_id=category,
+                        trainer_id=trainer, start_date=start, end_date=end)
+        course.save()
+        if course.pk:
+            return redirect('user-profile-dash')
+    return render(request, 'khieer/add-course_bag.html', context={"cats": category, "trainers": trainer})
 
 
 def create_contact(request):
@@ -57,6 +85,103 @@ def add_technical(request):
             return JsonResponse({"data": -1})
 
 
+def course_request(request, pk):
+    course = Course.objects.get(pk=pk)
+    context = {"course": course}
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        phone = request.POST.get('phone')
+        email = request.POST.get('email')
+        course = CourseRequest(name=name, phone=phone, email=email, course=course)
+        course.save()
+        if course.pk:
+            return redirect('course-list')
+    return render(request, 'khieer/request_course.html', context)
+
+
+def courses_list(request):
+    context = {"courses": Course.objects.all()}
+    return render(request, 'khieer/bag-list.html', context)
+
+
 def technical_list(request):
     problems = TechnicalSupport.objects.all()
     return render(request, 'main/technical_list.html', context={"problems": problems})
+
+
+class VolunteerAllReport(View):
+    def get(self, request, *args, **kwargs):
+        template = get_template('volunteer-all-pdf.html')
+        needyinshow = Volunteer.objects.all()
+        user_obj = User.objects.get(pk=request.user.pk)
+        context = {
+            "company": "خير السعوديه",
+            "user": user_obj,
+            "vols": needyinshow,
+            "topic": "المتقدمين للتطوع ",
+            "today": datetime.today().strftime('%Y-%m-%d'),
+        }
+        html = template.render(context)
+        pdf = render_to_pdf('volunteer-all-pdf.html', context)
+        if pdf:
+            response = HttpResponse(pdf, content_type='application/pdf')
+            filename = "Invoice_%s.pdf" % ("12341231")
+            content = "inline; filename='%s'" % (filename)
+            download = request.GET.get("download")
+            if download:
+                content = "attachment; filename='%s'" % (filename)
+            response['Content-Disposition'] = content
+            return response
+        return HttpResponse("Not found")
+
+
+class HebaAllReport(View):
+    def get(self, request, *args, **kwargs):
+        template = get_template('heba-all-pdf.html')
+        needyinshow = HebaKheer.objects.all()
+        user_obj = User.objects.get(pk=request.user.pk)
+        context = {
+            "company": "خير السعوديه",
+            "user": user_obj,
+            "hebas": needyinshow,
+            "topic": "هبات الخير ",
+            "today": datetime.today().strftime('%Y-%m-%d'),
+        }
+        html = template.render(context)
+        pdf = render_to_pdf('heba-all-pdf.html', context)
+        if pdf:
+            response = HttpResponse(pdf, content_type='application/pdf')
+            filename = "Invoice_%s.pdf" % ("12341231")
+            content = "inline; filename='%s'" % (filename)
+            download = request.GET.get("download")
+            if download:
+                content = "attachment; filename='%s'" % (filename)
+            response['Content-Disposition'] = content
+            return response
+        return HttpResponse("Not found")
+
+
+class CourseAllReport(View):
+    def get(self, request, *args, **kwargs):
+        template = get_template('course-all-pdf.html')
+        needyinshow = Course.objects.all()
+        user_obj = User.objects.get(pk=request.user.pk)
+        context = {
+            "company": "خير السعوديه",
+            "user": user_obj,
+            "courses": needyinshow,
+            "topic": "الحقائب الخضراء ",
+            "today": datetime.today().strftime('%Y-%m-%d'),
+        }
+        html = template.render(context)
+        pdf = render_to_pdf('course-all-pdf.html', context)
+        if pdf:
+            response = HttpResponse(pdf, content_type='application/pdf')
+            filename = "Invoice_%s.pdf" % ("12341231")
+            content = "inline; filename='%s'" % (filename)
+            download = request.GET.get("download")
+            if download:
+                content = "attachment; filename='%s'" % (filename)
+            response['Content-Disposition'] = content
+            return response
+        return HttpResponse("Not found")

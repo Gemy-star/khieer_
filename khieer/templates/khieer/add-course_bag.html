@@ -1,0 +1,128 @@
+{% extends 'dashmain.html' %}
+
+{% block title %}  إضافة حقيبه خضراء {% endblock title %}
+
+
+{% block body %}
+
+    <div class="main-content-inner" id="contact-section">
+        <div class="container">
+             <div class="row center">
+                  <div class="col-12 center">
+               <center>
+                        <h2 class="body-font text-blue"  style="font-size: 35px; font-weight: bold;">شارك فى الخير</h2>
+                 <hr/>
+                    <p class="body-font text-green" style="font-size: 25px">طاقات و أرواح
+                        شبابية خلاقة
+                    </p>
+                   </center>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 bg-home center">
+                    <div class="card">
+                        <div class="card-header">
+                               <center>
+                        <h5 class="body-font text-green">إضافة حقيبه خضراء</h5>
+                    </center>
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                {% csrf_token %}
+                                <div class="form-group row">
+                                    <div class="col-md-6 mb-4 mb-lg-0">
+                                        <input type="text" name="name" id="name" class="form-control body-font"
+                                               placeholder="الأسم">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="url" name="link" id="link" class="form-control body-font"
+                                               placeholder="المسار الألكترونى">
+
+                                    </div>
+                                </div>
+                                         <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label for="cat" class="body-font">اختار النصنيف</label>
+
+<select class="form-control body-font body-font" name="cat" id="cat">
+{% for cat in cats  %}
+  <option class="body-font" value="{{cat.pk}}">{{cat.name}} </option>
+
+{% endfor %}
+</select> 
+                                    </div>
+                                </div>
+                                
+                                        <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label for="trainer" class="body-font">اختار مدرب</label>
+
+<select class="form-control body-font body-font" name="trainer" id="trainer">
+{% for trainer in trainers  %}
+  <option class="body-font" value="{{trainer.pk}}">{{trainer.first_name}} {{trainer.last_name}}</option>
+{% endfor %}
+</select> 
+                                    </div>
+                                </div>
+                                     <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="number" name="total_hours" id="total_hours"
+                                               class="form-control body-font"
+                                               placeholder=" عدد الساعات">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="text" name="description" id="description"
+                                               class="form-control body-font"
+                                               placeholder=" المحاور">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <input type="file" name="logo" id="logo"
+                                               class="form-control body-font"
+                                               placeholder=" الشعار">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-12">
+                                        <label for="start" class="body-font">تاريخ البدايه</label>
+                                        <input class="form-control body-font" type="date" id="start" name="trip-start"
+                                               value="2021-01-01"
+                                               min="2021-01-01" max="2021-01-01">
+                                        
+                                    </div>
+                                              </div>
+                                                                <div class="form-group row">
+                                        <div class="col-12">
+                                            <label for="end" class="body-font">تاريخ النهايه</label>
+                                        </div>
+
+                                        <input class="form-control body-font body-font" type="date" id="end" name="trip-start"
+                                                   value="2021-01-01"
+                                                   min="2021-01-01" max="2021-01-01">
+
+
+                                        </div>
+
+                                    <div class="form-group row m-0 m-auto">
+                                        <div class="col-md-12" id="depend_div">
+                                            <button type="submit" id="add_bag"
+                                                    class="btn btn-teal body-font text-white"> إضافة
+                                            </button>
+                                        </div>
+                                    </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock body %}
+

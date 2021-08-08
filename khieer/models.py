@@ -72,7 +72,6 @@ class Course(models.Model):
     end_date = models.DateField(verbose_name="تاريخ النهايه", null=True, auto_now=False, auto_now_add=False, )
     total_hours = models.IntegerField(null=True, blank=True, verbose_name='عدد الساعات')
     trainer = models.ForeignKey(Trainer, on_delete=models.CASCADE, verbose_name='المدرب')
-    price = models.IntegerField(null=True, blank=True, default=1500, verbose_name='السعر')
 
     @property
     def is_past_due(self):
@@ -114,3 +113,15 @@ class Volunteer(models.Model):
 
     def __str__(self):
         return self.first_name
+
+
+class CourseRequest(models.Model):
+    name = models.CharField(max_length=255, null=True, verbose_name='اسم الملتحق')
+    email = models.EmailField(
+        verbose_name=_('email address'), max_length=255
+    )
+    phone = models.CharField(max_length=255, null=True, blank=True)
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, null=True)
+
+    def __str__(self):
+        return self.name

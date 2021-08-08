@@ -1,35 +1,38 @@
 {% extends 'dashmain.html' %}
 
 
-{% block title %}  التقارير || خير السعوديه {% endblock title %}
+{% block title %}  التقارير  {% endblock title %}
 
 {% block body %}
 <div class="main-content-inner">
 <div class="container">
-    <div class="row">
-        <div class="col-10">
-            <h3 class="body-font text-green">التقارير</h3>
-            <hr/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
+     <div class="row center">
+                  <div class="col-12 center">
+               <center>
+                        <h2 class="body-font text-blue"  style="font-size: 35px; font-weight: bold;">التقارير</h2>
+                 <hr/>
+                    <p class="body-font text-green" style="font-size: 25px"> خير السعودية
+                    </p>
+                   </center>
+                  </div>
+            </div>
+                            <div class="row">
+                    <div class="col-lg-8 bg-home center">
+            <div class="card" style="background-color: #f4f4f4">
                 <div class="card-body">
 
-                            <a class="btn btn-success body-font text-white" href="{% url 'found-all-pdf' %}"> الجمعيات  </a>
+                            <a class="btn btn-teal body-font text-white" href="{% url 'vol-report' %}"> المتطوعين  </a>
+             <br/>
+                                        <hr/>
+                                     <a class="btn btn-teal body-font text-white" href="{% url 'course-report' %}"> الحقائب الخضراء  </a>
              <br/>
                                         <hr/>
 
-                    <a class="btn btn-success body-font text-white" href="{% url 'needy-all-pdf' %}"> الحالات  </a>
+                                         <a class="btn btn-teal body-font text-white" href="{% url 'heba-report' %}"> هبات الخير  </a>
              <br/>
                                         <hr/>
-                    <a class="btn btn-success body-font text-white" href="{% url 'volunteer-all-pdf' %}"> المتطوعيين  </a>
-             <br/>
-                                        <hr/>
-                    <a class="btn btn-success body-font text-white" href="{% url 'enable-all-pdf' %}"> حقائب الدائرة الخضراء  </a>
-             <br/>
-                                        <hr/>
+
+
 
                 </div>
             </div>

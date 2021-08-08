@@ -1,0 +1,48 @@
+{% extends 'main.html' %}
+{%  load static %}
+{% block title %}  التمكين {% endblock title %}
+
+
+{% block content %}
+   <div class="ftco-blocks-cover-1">
+       <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('../../../static/images/tamkeen_banner.png')">
+        <div class="container">
+          <div class="row align-items-center ">
+
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="body-font h5 " style="color: #5DBD7E"> خير السعودية</span>
+              <h1 class="mb-3 font-weight-bold body-font">  التمكين الاجتماعي  </h1>
+              <p><a href="{% url 'home-page' %}" class="text-white">الرئيسية</a> <span class="mx-3">/</span> <strong>   التمكين الاجتماعي  </strong></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="{% static 'images/tamkeen.png' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-6 ml-auto pl-md-6">
+<span class="body-font h5 text-green head-size"> التمكين الاجتماعي  </span>
+              <hr/>
+            <p class="body-font text-black " style="font-size: 20px;"><span>
+توفير فرص تدريب وتوظيف المستفيدات والعمل على إعدادهن للانخراط في سوق العمل من خلال عدد من البرامج التدريبية لتطوير مهارات المستفيدات والتي تشمل دورات في مجال (التصوير الجداري - تنسيق مناسبات متكامل- مبادئ فن المكياج وتحديد الوجه- أساسيات التصوير والاضاءة والصوتيات- صيانة جوالات وساعات- تصميم داخلي- أفلام قصيرة ومونتاج وإخراج- مبادئ الجرافيك- خياطة متطورة متخصصة الخ....) كما نسعى لعقد شراكات لتوفير برامج التدريب المنتهية بالتوظيف وذلك سعيا لتخفيف الفقر وتنمية كوادر من المستفيدات ورفع كفاءاتهن من خلال تعلم مهارات جديدة من شأنها أن تحسن فرصهن في التوظيف ، وكذلك نسعى إلى رفع وعي موظفات القطاع الغير ربحي ليتمكنوا من توفير الإرشاد للمستفيدات وتطوير طرق التواصل معهم ذلك عبر الشراكات المستدامة مع المؤسسات والجهات المتخصصة
+            </span>
+              <center>
+                              <a class="btn btn-success text-white"  href="{% url 'cases-types' %}" style="background-color: #5DBD7E">المزيد</a>
+
+          </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,85 @@
+{% extends 'dashmain.html' %}
+{% load static %}
+
+{% block title %} خير السعوديه{% endblock title %}
+
+
+{% block body %}
+    <div class="main-content-inner center">
+   <div class="row">
+       <div class="col-md-3 mr-2">
+                   <div class="card">
+        <div class="card-title">
+       <center>   <p style="font-size: larger;" class="text-cursive text-green" > عدد الحالات</p> </center>
+        </div>
+        <div class="card-body" id="cases_count">
+
+        </div>
+    </div>
+
+       </div>
+              <div class="col-md-3 mr-2">
+                   <div class="card">
+        <div class="card-title">
+       <center>   <p style="font-size: larger;" class="text-cursive text-green" > عدد الموظفين</p> </center>
+        </div>
+        <div class="card-body" id="emp_count">
+
+        </div>
+    </div>
+
+       </div>
+              <div class="col-md-3 mr-2">
+                   <div class="card">
+        <div class="card-title">
+       <center>   <p style="font-size: larger;" class="text-cursive text-green" > عدد الجمعيات</p> </center>
+        </div>
+        <div class="card-body" id="found_count">
+
+        </div>
+    </div>
+
+       </div>
+
+   </div>
+
+</div>
+
+   <div class="main-content-inner">
+<div class="row">
+<div class="col-md-6 ">
+        <div class="card">
+        <div class="card-title">
+       <center>   <p style="font-size: larger;" class="body-font text-green" id="found_name">خير السعوديه</p> </center>
+        </div>
+        <div class="card-body" id="found_body">
+
+        </div>
+    </div>
+
+
+</div>
+     <div class="col-md-6 ">
+    <div class="card">
+        <div class="card-title">
+       <center>   <p style="font-size: larger;" class="text-cursive text-red" id="employee_name">خير السعوديه</p> </center>
+        </div>
+        <div class="card-body" id="employee_body">
+
+        </div>
+    </div>
+</div>
+
+</div>
+   </div>
+
+{% endblock body %}
+
+    {% block  javascript %}
+        <script>
+
+
+
+        </script>
+
+    {% endblock javascript %}

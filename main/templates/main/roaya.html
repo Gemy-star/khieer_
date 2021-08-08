@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+{%  load static %}
+{% block title %} رسالتنا و رؤيتنا {% endblock title %}
+
+
+{% block content %}
+   <div class="ftco-blocks-cover-1">
+       <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('../../../static/images/roaya_banner.png')">
+        <div class="container">
+          <div class="row align-items-center ">
+
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="body-font h5 " style="color: #5DBD7E"> رسالتنا و رؤيتنا</span>
+              <h1 class="mb-3 font-weight-bold body-font">رسالتنا و رؤيتنا</h1>
+              <p><a href="{% url 'home-page' %}" class="text-white">الرئيسيه</a> <span class="mx-3">/</span> <strong>رسالتنا و رؤيتنا</strong></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'images/roaya_new.png' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="body-font h5 text-green head-size">الرؤية </span>
+              <hr/>
+            <p class="body-font text-black " ><span>
+الريادة الأجتماعية في تعزيز حب العمل الخيري والعطاء بوعي 
+            </span>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="{% static 'images/resala.png' %}" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="body-font h5 text-green head-size">الرسالة  </span>
+              <hr/>
+            <p class="body-font text-black" ><span>
+إعادة تعريف العمل الخيري والاجتماعي بطرق الإلهام والانسنة والعطاء بوعي , ونبتكر أو نتعاون في إخراج منتجات جاذبة ومحفزة
+             </span>
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock content %}

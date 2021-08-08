@@ -49,6 +49,15 @@
                                                placeholder="البريد الألكترونى">
                                     </div>
                                 </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label for="password" class="text-cursive h5 text-black">كلمة المرور
+                                            </label>
+                                        <input type="password" id="password" name="password" class="form-control"
+                                               placeholder="البريد الألكترونى">
+                                    </div>
+                                </div>
+
                                        <center>
                                         <input type="submit" id="btn_login"
                                                        class="btn btn-login text-white py-3 px-5"
@@ -63,159 +72,5 @@
             </div>
         </div>
     </div>
-    {% block javascript %}
-        <script>
-            var email_address;
-            var user = {
-                user_type: null,
-                user_type_id:0
-            }
-            $(() => {
-                $("#btn_login").on('click', event => {
-                    event.preventDefault();
-                    $.ajax({
-                        method: 'POST',
-                        url: '{% url 'check-email' %}',
-                        data: {
-                            'email': $('#email').val(),
-                            'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val()
-                        },
-                        success: function (data) {
-                            sessionStorage.setItem('user_id', data.user_id);
-                            if (data.status) {
-                                email_address = data.email;
-                                if (data.user_type === 2) {
-                                    user.user_type = ' مشرف جمعيه رئيسيه'
-                                    user.user_type_id = 2
-                                sessionStorage.setItem('user' , user)
 
-                                } else if (data.user_type === 3) {
-                                    user.user_type = 'مشرف جمعيه تنمويه'
-                                    user.user_type_id = 3
-                                sessionStorage.setItem('user' , user)
-
-                                } else if (data.user_type === 4) {
-                                    user.user_type = 'مشرف متعاون'
-                                    user.user_type_id = 4
-                                sessionStorage.setItem('user' , user)
-
-                                } else if (data.user_type === 5) {
-                                    user.user_type = 'محتاج'
-                                    user.user_type_id = 5
-                                sessionStorage.setItem('user' , user)
-
-                                } else if (data.user_type === 7) {
-                                    user.user_type = 'متطوع'
-                                    user.user_type_id = 7
-                                sessionStorage.setItem('user' , user)
-
-                                }
-                                else if (data.user_type === 6) {
-                                    user.user_type = 'متبرع'
-                                    user.user_type_id = 6
-                                sessionStorage.setItem('user' , user)
-
-                                } else {
-                                    user.user_type = 'مشرف عام'
-                                    user.user_type_id = 1
-                                    sessionStorage.setItem('user' , user)
-
-
-                                }
-                                $("#form_login").empty();
-                                $("#form_login").append(
-                                    `
-                        <div class="justify-content-center">
-                          <h3  class="text-cursive h5 text-red">${data.user_name}</h3>
-                          <p  class="text-cursive h5 text-red">${user.user_type}</p>
-                   </div>
-                               <form action="#" method="post">
-                                {% csrf_token %}
-                                <div class="form-group row">
-                                    <div class="col-md-12">
-                                        <label for="password"  class="text-cursive h5 text-black">
-                                            كلمة المرور</label>
-                                        <input type="password" id="password" name="password" class="form-control"
-                                               placeholder="كلمة المرور">
-                                    </div>
-                                </div>
-                                   <div class="form-group row">
-                                    <div class="col-md-6 mr-auto">
-                                        <center><input type="submit" id="btn_login_password"
-                                                       class="btn btn-block btn-login text-white py-3 px-5"
-                                                       value="الدخول"></center>
-                                    </div>
-                                   </div>
-                        </form>
-
-                                  `
-                                );
-                                $("#btn_login_password").on('click', event => {
-                                    event.preventDefault();
-                                    $.ajax({
-                                        method: 'POST',
-                                        url: '{% url 'login' %}',
-                                        data: {
-                                            'email': email_address,
-                                            'password': $("#password").val(),
-                                            'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val()
-                                        },
-                                        success: function (data) {
-                                            if (data.status === 'done') {
-                                                swal({
-                                                    title: "تم",
-                                                    text: "تم  بنجاح",
-                                                    icon: "success",
-                                                    button: "إغلاق",
-                                                });
-
-                                                if (user.user_type_id === 2) {
-                                                    window.location.href = '{% url 'home-page' %}'
-                                                } else if (user.user_type_id === 3) {
-                                                    window.location.href = '{% url 'home-page' %}'
-                                                } else if (user.user_type_id === 4) {
-                                                    window.location.href = '{% url 'home-page' %}'
-                                                } else if (user.user_type_id === 5) {
-                                                    window.location.href = '{% url 'home-page' %}'
-                                                } else if (user.user_type_id === 6) {
-                                                    window.location.href = '{% url 'home-page' %}'
-                                                } else if (user.user_type_id === 7) {
-                                                    window.location.href = '{% url 'home-page' %}'
-                                                }
-                                                else {
-                                                    window.location.href = '{% url 'home-page' %}'
-                                                }
-                                            } else {
-                                                swal({
-                                                    title: "خطا",
-                                                    text: "من فضلك راجع البيانات",
-                                                    icon: "error",
-                                                    button: "إغلاق",
-                                                });
-                                            }
-                                        },
-                                        error: function (error) {
-                                            alert(error.responseText)
-                                        }
-                                    });
-
-                                });
-                            } else {
-                                swal({
-                                    title: "خطا",
-                                    text: "من فضلك راجع البيانات",
-                                    icon: "error",
-                                    button: "إغلاق",
-                                });
-                            }
-                        },
-                        error: function (error) {
-                            alert(error.responseText)
-                        }
-                    });
-                });
-
-            });
-        </script>
-    {% endblock javascript %}
 {% endblock content %}

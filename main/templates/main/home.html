@@ -1,91 +1,247 @@
 {% extends 'main.html' %}
 {% load static %}
-{% block title %}الصفحة الرئيسية   {% endblock title %}
+{% block title %} خير السعودية{% endblock title %}
+
+
 {% block content %}
-<section  class="carousel_section">
-<div id="HomeIntro" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#HomeIntro" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#HomeIntro" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#HomeIntro" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
- <img
-                            class="d-inline-block w-50"
-                            src="{% static 'images/backgrounds/green_icon.png' %}"
-                            alt="First slide"
-                        />
-     <div class="carousel-caption d-none d-md-block">
-        <h3>برنامج الدائرة الخضراء</h3>
-                            <p>برنامج إرشادى مميز يساهم فى تعريف العطاء بوعى</p>
-      </div>
+    <div class="ftco-blocks-cover-1 advirst" >
+        <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: #0b0b0b"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" class="" style="background-color: #2D6D93"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" class="" style="background-color: #5DBD7E"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="background-image: url('../../../static/images/login.png')">
+                    <div class="carousel-caption d-none d-md-block text-lay-image" style="height: 380px; width: 100%;">
+                        <h2 class="body-font text-green"
+                            style="color: #2D6D93 !important; font-size: 50px; font-weight: bold;">منصة الخير </h2>
+                        <h5 class="body-font text-black" style="font-size: 18px; font-weight: bold;">
+                           الريادة في أنسنة العمل الخيري المتناغم والمستدام ونشر ثقافة الخير والعطاء بوعي  </h5>
+                        <p class="body-font text-green" style="font-size: 24px; font-weight: bold;">  نعيش العطاء </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="{% static 'images/backgrounds/login.png' %}"   class="d-inline-block w-50" alt="...">
-             <div class="carousel-caption d-none d-md-block">
-        <h3>منصة الخير</h3>
-                            <p>صممت لتيسير الخير لفاعل الخير ليكون ضمن دائرة تكافلية موثوقة، مستمرة، وممتدة</p>
-      </div>
+    <div class="site-section ">
+        <div class="container bg-home">
+            <div class="row">
+                <div class="col-12">
+                    <center><h3 class="body-font text-green" style="font-size: 38px; font-weight: bold;"> رسالة خير</h3>
+                    </center>
+                    <center><p class="body-font text-black " style="font-size: 22px; padding: 10px 10px 10px 10px; margin: 6%;
+    margin-bottom: 9%; font-weight:600">
 
-    </div>
-    <div class="carousel-item">
-      <img src="{% static 'images/backgrounds/h1_hero.png' %}" class="d-inline-block w-50" alt="...">
-                     <div class="carousel-caption d-none d-md-block">
-        <h3>خير السعودية</h3>
-                            <p>نيسر الخير لأهل الخير</p>
-      </div>
+إعادة تعريف العمل الخيري والأجتماعي بطرق الإلهام والأنسنة والعطاء بوعي ,ونبتكر او نتعاون في إخراج منتجات جاذبة ومحفَزة                          </p></center>
 
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#HomeIntro" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#HomeIntro" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
- <section class="feature">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="block-2" style="background-color: white">
+                        <a class="btn btn-primary btn-lg btn-block body-font text-white" style="background-color: #1d5987;"
+                           href="{% url 'heba-kheer' %}">هبة الخير</a>
+                  <img src="{% static 'images/waheb.png' %}" class="img-fluid">
 
-            <div class="feature__content container container--pall">
+                    </div>
+                </div>
+{#                <div class="col-lg-3">#}
+{#                    <div class="block-2" style="background-color: white">#}
+{#                          <a class="btn btn-primary btn-lg btn-block body-font text-white"  style="background-color: #1d5987;"#}
+{#                           href="{% url 'cases-types' %}"> التمكين الإجتماعى</a>#}
+{#                  <img src="{% static 'images/tamkeen_banner.png' %}" class="img-fluid">#}
+{#                    </div>#}
+{#                </div>#}
+{#                  <div class="col-lg-3">#}
+{#                    <div class="block-2" style="background-color: white">#}
+{#                          <a class="btn btn-primary btn-lg btn-block body-font text-white"  style="background-color:#1d5987;"#}
+{#                           href="{% url 'new-takafel-case-page' %}"> التكافل الإجتماعى</a>#}
+{#                  <img src="{% static 'images/takfel.png' %}" class="img-fluid">#}
+{#                    </div>#}
+{#                </div>#}
 
-                <div class="feature__intro">
-                    <h2>خير السعودية</h2>
-                    <p>
-                       نسعى لتفعيل التمكين الاجتماعي والتكافل الأجتماعى باستخدام التقنيات الحديثة لربط الكيانات المقتدرة من المؤسسات والأفراد بالمستفيدات من الجمعيات الخيرية الرسمية في المملكة العربية السعودية
-                    </p>
+                <div class="col-lg-6 col-md-6">
+                    <div class="block-2" style="background-color: white;">
+                          <a class="btn btn-primary btn-lg btn-block body-font text-white" style="background-color: #1d5987;"
+                           href="#">دائرة الخضراء</a>
+
+                  <img src="{% static 'images/green_icon.png' %}" class="img-fluid">
+
+                    </div>
                 </div>
 
-            <div class="feature__grid">
-                   <div class="feature__item">
-            <div class="feature__icon"><img src="{% static 'images/backgrounds/green_banner.png' %}"/></div>
-            <div class="feature__title">
-               <a href="#" class="button header__cta" style="color: #f4f4f4">
-                 الدائرة الخصراء
-               </a>
+
             </div>
-            <div class="feature__description">
+
+        </div>
+    </div>
+
+
+  <div class="site-section">
+        <div class="container  bg-home">
+
+            <div class="row justify-content-center text-center mb-5 section-2-title">
+                <div class="col-md-6">
+                    <span class="text-cursive h5 text-red body-font" style="font-size: 25px; ;">شركاء النجاح</span>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container text-center my-3 advirst" >
+            <div class="row mx-auto my-auto">
+                <div class="col-lg-3 col-md-3">
+                    <div class="block-2">
+                        <img src="{% static 'images/color.png' %}" class="img-fluid img_icon_home" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="block-2">
+                        <img src="{% static 'images/wala.png' %}" class="img-fluid img_icon_home"/>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="block-2">
+                        <img src="{% static 'images/Mntrni.png' %}" class="img-fluid img_icon_home" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="site-section advirst " >
+        <div class="container ">
+            <div class="row mt-5 justify-content-center ">
+
+
+                <div class="col-lg-3 col-md-6 text-center ">
+                    <span class="text-green h2 d-block " id="pay">0</span>
+                    <span class="body-font">فاعل خير</span>
+                    <img alt="img" width="30" height="30" src="{% static 'images/motabr3.png' %}"/>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center numbers">
+                    <span class="text-green h2 d-block" id="needy">251</span>
+                    <span class="body-font"> مستفيد</span>
+                    <img alt="img" width="30" height="30" src="{% static 'images/case.png' %}"/>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center numbers">
+                    <span class="text-green h2 d-block" id="work">45+</span>
+                    <span class="body-font">فريق عمل</span>
+                    <img alt="img" width="30" height="30" src="{% static 'images/emp.png' %}"/>
+
+                </div>
+                <div class="col-lg-3 col-md-6  text-center numbers">
+                    <span class="text-green h2 d-block" id="followers">2000+</span>
+                    <span class="body-font">متابع</span>
+                    <img alt="img" width="30" height="30" src="{% static 'images/follower.png' %}"/>
+                </div>
+
             </div>
         </div>
 
 
-                                   <div class="feature__item">
-            <div class="feature__icon"><img src="{% static 'images/backgrounds/heba_kheer.png' %}"/></div>
-            <div class="feature__title">
-               <a href="#" class="button header__cta" style="color: #f4f4f4">
-                هبة الخير
-               </a>
+    </div>
+
+
+
+
+
+  <div class="site-section">
+        <div class="container  bg-home">
+
+            <div class="row justify-content-center text-center mb-5 section-2-title">
+                <div class="col-md-6">
+                    <span class="text-cursive h5 text-red body-font" style="font-size: 25px; ;">الداعمين </span>
+
+                </div>
             </div>
-            <div class="feature__description">
+
+
+        </div>
+        <div class="container text-center my-3 advirst" >
+            <div class="row mx-auto my-auto">
+                <div class="col-lg-3 col-md-3">
+                    <div class="block-2">
+                        <img src="{% static 'images/share2.png' %}" class="img-fluid img_icon_home" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="block-2">
+                        <img src="{% static 'images/share4.png' %}" class="img-fluid img_icon_home"/>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="block-2">
+                        <img src="{% static 'images/share3.png' %}" class="img-fluid img_icon_home" />
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="block-2">
+                        <img src="{% static 'images/alsan3.jpeg' %}" class="img-fluid img_icon_home"/>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-            </div>
-            </div>
-        </section>
+    </div>
 
 
 {% endblock content %}
+
+
+{% block javascript %}
+    <script>
+function animateValue(id, start, end, duration) {
+    if (start === end) return;
+    var range = end - start;
+    var current = start;
+    var increment = end > start? 1 : -1;
+    var stepTime = Math.abs(Math.floor(duration / range));
+    var obj = document.getElementById(id);
+    var timer = setInterval(function() {
+        current += increment;
+        obj.innerHTML = current;
+        if (current == end) {
+            clearInterval(timer);
+        }
+    }, stepTime);
+}
+
+        $(document).ready(function () {
+            var user = sessionStorage.getItem('user_id');
+            console.log(user);
+
+            $('.carousel .carousel-item').each(function () {
+                var minPerSlide = 3;
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+
+                for (var i = 0; i < minPerSlide; i++) {
+                    next = next.next();
+                    if (!next.length) {
+                        next = $(this).siblings(':first');
+                    }
+
+                    next.children(':first-child').clone().appendTo($(this));
+                }
+            });
+
+  //Animated Numbers
+animateValue("followers", 0, 2000, 10000);
+animateValue("work", 0, 45, 10000);
+animateValue("needy", 0, 251, 10000);
+animateValue("pay", 0, 300, 10000);
+
+
+
+        });
+
+    </script>
+{% endblock javascript %}

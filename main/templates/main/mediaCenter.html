@@ -1,0 +1,95 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block title %}
+    المركز الأعلامى
+{% endblock title %}
+
+{% block content %}
+   <div class="ftco-blocks-cover-1">
+       <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
+      <div class="site-section-cover overlay" style="background-image: url('../../../static/images/mic.jpeg')">
+        <div class="container">
+          <div class="row align-items-center ">
+
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="body-font h5 " style="color: #5DBD7E"> خير السعودية</span>
+              <h1 class="mb-3 font-weight-bold body-font" style="font-size: 30px;">    المركز الأعلامى</h1>
+              <p><a href="{% url 'home-page' %}" class="text-white">الرئيسية</a> <span class="mx-3">/</span> <strong>    المركز الأعلامى</strong></p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+          <div class="row">
+<div class="col-12">
+              <div class="center">
+             <center>
+              <span class="body-font head-size text-blue">المركز الأعلامى</span>
+                  <br/>
+                  <br/>
+             </center>
+          </div>
+
+</div>
+</div>
+        <div style="margin: 0 auto" class="row">
+
+          <div class="col-md-10 ml-auto pl-md-5">
+<span class="body-font h5 text-green head-size">الشعلان تتألق في عالم المبادرات الإنسانية </span>
+            <p class="body-font text-black " style="font-size: 20px;"><span>
+رشحت مؤخرا أماني الشعلان صاحبة مبادرة (خير السعودية) ضمن أفضل 15 مبادرة على مستوى الوطن العربي من أصل 87 ألف مبادرة لـ»صناع الأمل» إحدى مبادرات الشيخ محمد بن راشد، نائب رئيس الإمارات رئيس مجلس الوزراء حاكم دبي، حيث إنها أكبر مبادرة عربية تهدف إلى تكريم البرامج والمشاريع والمبادرات الإنسانية والمجتمعية، التي يسعى أصحابها من خلالها إلى مساعدة الناس دون مقابل، ونشر الأمل وحصلت على شهادة التميّز لذلك، والجدير بالذكر أن (خير السعودية) كانت مبادرة هاشتاق على تويتر للتكافل ما بين أفراد المجتمع  وتحوّل إلى وقف خيري لتعزيز فرص التكافل.
+
+</span></p>
+<center>
+    <a class="btn btn-teal text-white body-font" href="https://www.alwatan.com.sa/article/377870">إضغط هنا</a>
+</center>
+          </div>
+        </div>
+      <hr/>
+              <div style="margin: 0 auto" class="row">
+
+          <div class="col-md-10 ml-auto pl-md-5">
+<span class="body-font h5 text-green head-size">"خير السعودية" مبادرة متخصصة في نشر افكار و صور للتكافل الاجتماعي </span>
+            <p class="body-font text-black " style="font-size: 20px;"><span>
+حساب خير السعودية هو حساب متخصص في نشر افكار و صور مختلفة للتكافل الاجتماعي ، و يعرف نفسه في انستغرام بأنه مبادرة تعمل رسميا تحت مظلة الجمعية السعودية للعمل التطوعي "تكاتف"، ومن احدث اعمال خير السعودية كانت الخيمة الرمضانية في الرياض، اذ قدمت الاسر المنتجة اعمالها وسط حكايا المتطوعين وقصص نجاحهم.في تويتر منيرة العيسى غردت: الان عبر #خير_السعودية إكفل  أسرة في أي منطقة من مناطق المملكة لتوفير مؤونة.
+
+
+</span></p>
+<center>
+    <a class="btn btn-teal text-white body-font" href="https://www.alaan.tv/programs/family/tawasul/109470/khair-saudi-arabia-initiative-specializing-dissemination-ideas-photos-social-solidarity">إضغط هنا</a>
+</center>
+          </div>
+        </div>
+<hr/>
+{% for blog in blogs %}
+                            <div class="row">
+          <div class="col-md-6">
+              <iframe width="560" height="315" src="{{ blog.video_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+<span class="body-font h5 text-green head-size">{{ blog.title }}</span>
+            <p class="body-font text-black " style="font-size: 20px;"><span>
+                {{ blog.content }}
+</span></p>
+
+          </div>
+        </div>
+
+          {% endfor %}
+
+
+
+      </div>
+    </div>
+
+
+
+
+{% endblock content %}

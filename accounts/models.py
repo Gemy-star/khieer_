@@ -34,11 +34,7 @@ class UserManager(BaseUserManager):
         user.is_active = True
         user.is_admin = False
         user.is_staff = False
-        user.is_volunteer = False
-        user.is_needy = False
-        user.is_donator = False
         user.is_helper_employee = False
-        user.is_premier_emp = False
         if commit:
             user.save(using=self._db)
         return user
@@ -57,14 +53,9 @@ class UserManager(BaseUserManager):
             phone=phone,
             commit=False,
         )
-        user.is_donator = False
         user.is_staff = True
-        user.is_superuser = True
         user.is_admin = True
-        user.is_needy = False
-        user.is_volunteer = False
         user.is_helper_employee = False
-        user.is_premier_emp = False
         user.is_secondary_emp = False
         user.user_type = 1
         user.save(using=self._db)
@@ -86,67 +77,10 @@ class UserManager(BaseUserManager):
         )
         user.is_secondary_emp = True
         user.is_admin = False
-        user.is_needy = False
-        user.is_donator = False
-        user.is_volunteer = False
+        user.is_staff = True
         user.is_helper_employee = False
-        user.is_premier_emp = False
         user.is_active = True
-        user.user_type = 3
-        user.save(using=self._db)
-        return user
-
-    def create_volunteer(self, email, first_name, last_name, phone, address, password):
-        """
-        Creates and saves a Secondary Employee USer with the given email, first name,
-        last name and password.
-        """
-        user = self.create_user(
-            email,
-            password=password,
-            first_name=first_name,
-            last_name=last_name,
-            phone=phone,
-            address=address,
-            commit=False,
-        )
-        user.is_secondary_emp = False
-        user.is_admin = False
-        user.is_needy = False
-        user.is_donator = False
-        user.is_volunteer = True
-        user.is_helper_employee = False
-        user.is_premier_emp = False
-        user.is_active = True
-        user.user_type = 7
-        user.save(using=self._db)
-        return user
-
-    def create_permier_employeeuser(self, email, first_name, last_name, phone, address, password):
-        """
-        Creates and saves a premier Employee User with the given email, first name,
-        last name and password.
-        """
-        user = self.create_user(
-            email,
-            password=password,
-            first_name=first_name,
-            last_name=last_name,
-            phone=phone,
-            address=address,
-            commit=False,
-        )
-        user.is_premier_emp = True
-        user.is_admin = False
-        user.is_needy = False
-        user.is_helper_employee = False
-        user.is_needy = False
-        user.is_volunteer = False
-        user.is_secondary_emp = False
-        user.is_active = True
-        user.is_donator = False
         user.user_type = 2
-        user.is_superuser = False
         user.save(using=self._db)
         return user
 
@@ -166,164 +100,42 @@ class UserManager(BaseUserManager):
         )
         user.is_secondary_emp = False
         user.is_admin = False
-        user.is_needy = False
+        user.staff = False
         user.is_helper_employee = True
-        user.is_premier_emp = False
         user.is_active = True
-        user.is_donator = False
-        user.is_volunteer = False
-        user.user_type = 4
+        user.user_type = 3
         user.save(using=self._db)
         return user
 
-    def create_trainer(self, email, first_name, last_name, phone, address, password):
-        """
-        Creates and saves a Helper Employee User with the given email, first name,
-        last name and password.
-        """
-        user = self.create_user(
-            email,
-            password=password,
-            first_name=first_name,
-            last_name=last_name,
-            phone=phone,
-            address=address,
-            commit=False,
-        )
-        user.is_secondary_emp = False
-        user.is_admin = False
-        user.is_needy = False
-        user.is_helper_employee = True
-        user.is_premier_emp = False
-        user.is_active = True
-        user.is_donator = False
-        user.is_volunteer = False
-        user.user_type = 9
-        user.save(using=self._db)
-        return user
 
-    def create_Needy_user(self, email, first_name, last_name, phone, address, password):
-        """
-        Creates and saves a Needy User with the given email, first name,
-        last name and password.
-        """
-        user = self.create_user(
-            email,
-            password=password,
-            first_name=first_name,
-            last_name=last_name,
-            phone=phone,
-            address=address,
-            commit=False,
-        )
-        user.is_secondary_emp = False
-        user.is_admin = False
-        user.is_donator = False
-        user.is_needy = True
-        user.is_volunteer = False
-        user.is_helper_employee = False
-        user.is_premier_emp = False
-        user.is_active = True
-        user.user_type = 5
-        user.save(using=self._db)
-        return user
 
-    def create_Donator_user(self, email, first_name, last_name, phone, address, password):
-        """
-        Creates and saves a Needy User with the given email, first name,
-        last name and password.
-        """
-        user = self.create_user(
-            email,
-            password=password,
-            first_name=first_name,
-            last_name=last_name,
-            phone=phone,
-            address=address,
-            commit=False,
-        )
-        user.is_secondary_emp = False
-        user.is_admin = False
-        user.is_needy = False
-        user.is_donator = True
-        user.is_helper_employee = False
-        user.is_premier_emp = False
-        user.is_active = True
-        user.is_volunteer = False
-        user.user_type = 6
-        user.save(using=self._db)
-        return user
 
-    def create_trainee(self, email, first_name, last_name, phone, address, password):
-        """
-        Creates and saves a Needy User with the given email, first name,
-        last name and password.
-        """
-        user = self.create_user(
-            email,
-            password=password,
-            first_name=first_name,
-            last_name=last_name,
-            phone=phone,
-            address=address,
-            commit=False,
-        )
-        user.is_secondary_emp = False
-        user.is_admin = False
-        user.is_needy = False
-        user.is_donator = True
-        user.is_helper_employee = False
-        user.is_premier_emp = False
-        user.is_active = True
-        user.is_volunteer = False
-        user.user_type = 8
-        user.save(using=self._db)
-        return user
 
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(
         verbose_name=_('email address'), max_length=255, unique=True
     )
-    # password field supplied by AbstractBaseUser
-    # last_login field supplied by AbstractBaseUser
+
     first_name = models.CharField(_('first name'), max_length=30, blank=True)
     last_name = models.CharField(_('last name'), max_length=150, blank=True)
     phone = models.CharField(max_length=255, null=True, blank=True)
     timestamp = models.DateTimeField(auto_now_add=True)
     address = models.CharField(_('Address'), max_length=255, null=True, blank=True)
-    is_premier_emp = models.BooleanField(_('Premier Employee '), default=False, help_text=_(
-        'Designates whether this user should be treated as a Premier Employee. '
-    ), )
     is_admin = models.BooleanField(_('Admin'), default=False, help_text=_(
         'Designates whether this user should be treated as an Admin. '
     ))
     is_secondary_emp = models.BooleanField(_('Secondary Employee'), default=False, help_text=_(
         'Designates whether this user should be treated as an Secondary Employee. '
     ))
-    is_needy = models.BooleanField(_('Needy '), default=False, help_text=_(
-        'Designates whether this user should be treated as an Needy. '
-    ))
-    is_donator = models.BooleanField(_('Donator '), default=False, help_text=_(
-        'Designates whether this user should be treated as an Donator. '
-    ))
-    is_volunteer = models.BooleanField(_('volunteer '), default=False, help_text=_(
-        'Designates whether this user should be treated as an volunteer. '
-    ))
+
     is_helper_employee = models.BooleanField(_('Helper Employee '), default=False, help_text=_(
         'Designates whether this user should be treated as an Helper Employee. '
     ))
     USER_TYPE_CHOICES = (
         (1, 'ممثل المؤسسة'),
-        (2, 'مشرف جمعية رئيسية'),
-        (3, 'مشرف جمعية تنموية'),
-        (4, 'مشرف متعاون'),
-        (5, 'مستفيد'),
-        (6, 'فاعل خير'),
-        (7, 'متطوع'),
-        (8, 'متدرب'),
-        (9, 'مدرب'),
-
+        (2, 'مشرف مركزى'),
+        (3, 'مشرف متطوع'),
     )
 
     user_type = models.PositiveSmallIntegerField(choices=USER_TYPE_CHOICES, null=True, verbose_name=_('User Type'),
@@ -371,12 +183,12 @@ class User(AbstractBaseUser, PermissionsMixin):
         return '{} <{}>'.format(self.get_full_name(), self.email)
 
     def has_perm(self, perm, obj=None):
-        "Does the user have a specific permission?"
+        """Does the user have a specific permission?"""
         # Simplest possible answer: Yes, always
         return True
 
     def has_module_perms(self, app_label):
-        "Does the user have permissions to view the app `app_label`?"
+        """Does the user have permissions to view the app `app_label`?"""
         # Simplest possible answer: Yes, always
         return True
 

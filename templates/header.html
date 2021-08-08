@@ -14,17 +14,15 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a href="#">الرئيسية</a><a href="#">عن المؤسسة</a><a href="#">إتصل بنا</a><a href="#" style="margin-inline: 0.8rem;">المدونة</a>
+          <a href="{% url 'home-page' %}">الرئيسية</a><a href="{% url 'about-page' %}">عن المؤسسة</a><a href="{% url 'contact-page' %}">إتصل بنا</a><a href="{% url 'media_center' %}" style="margin-inline: 0.8rem;">المدونة</a>
         </div>
 
-        <a href="#" style="color: #f4f4f4;" class="button header__cta hide-for-mobile">هبة الخير</a>
+        <a href="{% url 'heba-kheer' %}" style="color: #f4f4f4;" class="button header__cta hide-for-mobile">هبة الخير</a>
     </nav>
 
     <div class="header__menu has-fade">
-      <a href="">الرئيسية</a>
-      <a href="">عن المؤسسة</a>
-      <a href="">إتصل بنا</a>
-      <a href="">المدونة</a>
+             <a href="{% url 'home-page' %}">الرئيسية</a><a href="{% url 'about-page' %}">عن المؤسسة</a><a href="{% url 'contact-page' %}">إتصل بنا</a><a href="{% url 'media_center' %}" style="margin-inline: 0.8rem;">المدونة</a>
+
     </div>
 
   </header>

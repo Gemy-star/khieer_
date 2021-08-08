@@ -8,7 +8,27 @@
   display: table !important;
 }
 html {
-  overflow-x: hidden; }
+  font-size: 100%;
+  box-sizing: border-box;
+  height: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+font-family: 'Almarai', sans-serif !important;
+  font-size: small;
+  font-weight: 300;
+  color: #f4f4f4;
+  line-height: 1.3;
+  min-height: auto;
+  overflow-x: hidden;
+}
+
 .body-font {
   align-content: flex-start;
 font-family: 'Almarai', sans-serif;
@@ -375,21 +395,38 @@ h1, h2, h3, h4, h5,
   font-size: .8rem;
   text-transform: uppercase;
   padding: 10px 20px;
+    border : none !important;
   text-decoration: none; }
   .btn:active, .btn:focus {
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none; }
+  .dropdown-menu.show {
+            background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
+
+  }
+   .dropdown-menu.show a {
+     color : #f4f4f4 !important;
+   }
+    .dropdown-menu > a:hover {
+     color : #0b0b0b !important;
+      background-color: transparent;
+   }
+
   .btn.btn-teal {
-    background: #5DBD7E; }
+        background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
+ }
+    .btn.btn-primary {
+    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important; }
    .btn.btn-green {
-    background: #5a9635; }
+    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important; }
     .btn.btn-blue {
     background: #3b5998; }
    .btn.btn-login {
     background: #2D6D93; }
   .btn.btn-danger {
-    background: #5DBD7E; }
+    background: linear-gradient(to right, #2D6D93, #5DBD7E) !important;
+  }
   .btn.btn-outline-white {
     border-color: #fff;
     background: transparent;
@@ -1949,7 +1986,7 @@ align-items: end;
 .menu-wrap {
      width: fit-content;
     padding: 0;
-    background: #5DBD7E;
+    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
     height: fit-content;
     margin: 0 auto !important;
 }
@@ -2511,7 +2548,7 @@ h1 , h2 , h3 , h4 , h5 , span , p{
   .menu-wrap {
      width: fit-content;
     padding: 0;
-    background: #5DBD7E;
+    background: linear-gradient(to right, #2D6D93, #5DBD7E);
     height: fit-content;
     margin: 0 auto !important;
 }
@@ -2535,12 +2572,15 @@ h1 , h2 , h3 , h4 , h5 , span , p{
     display: flex;
 }
 
+.btn_grad {
+  background:linear-gradient(to right, #2D6D93, #5DBD7E) !important;
+}
 /* display 3 */
 @media (min-width: 768px) {
 .menu-wrap {
      width: fit-content;
     padding: 0;
-    background: #5DBD7E;
+    background:linear-gradient(to right, #2D6D93, #5DBD7E);
     height: fit-content;
     margin: 0 auto !important;
 }
@@ -2584,10 +2624,16 @@ h1 , h2 , h3 , h4 , h5 , span , p{
     border-color: #007b5e;
 }
 
-
+input {
+  margin-block: 0.5rem!important;
+}
+input > button {
+  margin-block: 0.5rem !important;
+  margin-top: 0.2rem;
+}
 
 section {
-    padding: 60px 0;
+    padding: 0 !important;
 }
 
 section .section-title {
@@ -3034,7 +3080,7 @@ h6 {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #5DBD7E; /* Set a background color */
+    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -3053,7 +3099,7 @@ h6 {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #5DBD7E; /* Set a background color */
+    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */

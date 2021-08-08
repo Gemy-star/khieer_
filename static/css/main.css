@@ -1,0 +1,92 @@
+.MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+
+
+
+ol.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+}
+ol.gradient-list > li {
+  background: #f4f4f4;
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+  counter-increment: gradient-counter;
+  margin-top: 1rem;
+  min-height: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+  position: relative;
+}
+ol.gradient-list > li::before, ol.gradient-list > li::after {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+  border-radius: 1rem 1rem 0 1rem;
+  content: "";
+  height: 3rem;
+  left: -1rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1rem;
+  width: 3rem;
+}
+ol.gradient-list > li::before {
+  align-items: flex-end;
+  content: counter(gradient-counter);
+  color: #1d1f20;
+  display: flex;
+  font: 900 1.5em/1 "Montserrat";
+  justify-content: flex-end;
+  padding: 0.125em 0.25em;
+  z-index: 1;
+}
+ol.gradient-list > li:nth-child(10n+1):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+2):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+3):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+4):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+5):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+6):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+7):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+8):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+9):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li:nth-child(10n+10):before {
+  background: linear-gradient(135deg, #5DBD7E 0%, #2D6D93 100%);
+}
+ol.gradient-list > li + li {
+  margin-top: 2rem;
+}
+
+.head-sec{
+  display: flex;
+  align-content: flex-start;
+  font-size: large;
+  font-weight: 600;
+  color: #5DBD7E ;
+  width: auto;
+  height: auto;
+}

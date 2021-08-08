@@ -1,52 +1,97 @@
 {% load static %}
-    <footer class="footer">
-            <div class="container">
-
-                <a class="footer__logo">
-                    <img src="{% static 'images/logos/logo.png' %}"/>
-                </a>
-
-                         <div class="footer__social">
-                    <a href="#">
-                        <i aria-hidden="false" class="fa fa-facebook"></i>
-
-                    </a>
-                    <a href="#">
-                        <i aria-hidden="false" class="fa fa-youtube"></i>
-
-                    </a>
-                    <a href="https://twitter.com/ksakhair?s=11">
-                        <i aria-hidden="false" class="fa fa-twitter"></i>
-
-                    </a>
-                    <a href="#">
-                        <i aria-hidden="false" class="fa fa-pinterest"></i>
-
-                    </a>
-                    <a href="https://www.instagram.com/ksakhair/">
-                        <i aria-hidden="false" class="fa fa-instagram"></i>
-                    </a>
+<footer class="site-footer" style="width: 100%; ">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="justify-content-center">
+                <center>  <h3 class="body-font"> تواصل معنا</h3> </center>
+                    <hr/>
                 </div>
+                <form action="#" method="post">
+                    {% csrf_token %}
+                    <div class="form-group row">
+                        <div class="col-md-6 mb-4 mb-lg-0">
+                            <input type="text" name="name" id="name" class="form-control"
+                                   placeholder="الأسم">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" name="phone" id="phone" class="form-control"
+                                   placeholder="رقم الجوال">
 
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="text" name="address" id="address"
+                                   class="form-control"
+                                   placeholder="عنوان الرسالة">
+                        </div>
+                    </div>
 
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <textarea name="message" id="message"
+                                   class="form-control summernote"
+                                   placeholder="الرسالة">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="form-group row">
+                            <div class="col-md-12" id="btn add">
+                          <center>      <button type="submit" id="btn_add"
+                                        class="btn btn-teal btn-custom-1 body-font text-white"> إرسال
+                                </button></center>
+                            </div>
+                        </div>
 
-                <div class="footer__links">
-                          <a href="#">عن المؤسسة</a>
-                    <a href="#">إتصل بنا</a>
-                    <a href="#">المدونة</a>
-                     <a href="#">الدعم الفنى</a>
-                    <a href="#">الشروط و الأحكام</a>
-                </div>
+                    </div>
 
-                <div class="footer__cta">
-                     <a class="twitter-timeline" data-width="350" data-height="250" data-dnt="false"
-                   href="https://twitter.com/KSAKhair?ref_src=twsrc%5Etfw">Tweets by KSAKhair</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
-
-                <div class="footer__copyright">
-                    جميع الحقوق محفوظة &copy;خير السعودية
-                </div>
+                </form>
 
             </div>
-        </footer>
+
+            <div class="col-lg-4  col-md-4">
+
+               <center><p class=" text-white body-font">نيسر الخير لأهل الخير </p></center>
+                <hr/>
+               <center><p class=" text-white body-font">للتواصل عبر البريد الألكترونى </p></center>
+               <center><p class="text-white text-cursive" style="font-size: 15px;">   info@khieer.com </p>
+                 <a style="display: inline-block;margin: 3px;" href="#"><span class="icon-facebook text-white"></span></a>
+                    <a style="display: inline-block; margin: 3px;" href="https://twitter.com/ksakhair?s=11"><span class="icon-twitter text-white"></span></a>
+                    <a style="display: inline-block; margin: 3px;" href="https://www.instagram.com/ksakhair/"> <i class="fa fa-instagram text-whit" aria-hidden="true"></i>
+</a>
+                                       <a style="display: inline-block; margin: 3px;" href="https://youtube.com/channel/UCbQ2vXRjCGOTp6o50NMAeZA"> <i class="fa fa-youtube text-whit" aria-hidden="true"></i>
+</a>
+
+               </center>
+               <center>
+                   <p class="mb-5 text-white body-font">4092-12393 ص.ب    </p>
+                               <a class="body-font text-white" href="{% url 'ethics' %}" style="text-decoration: none; cursor: pointer;"> الخصوصية و الأحكام</a>
+
+               </center>
+
+            </div>
+
+            <div class="col-lg-4  col-md-4">
+                <a class="twitter-timeline" data-width="250" data-height="350" data-dnt="true"
+                   href="https://twitter.com/KSAKhair?ref_src=twsrc%5Etfw">Tweets by KSAKhair</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        <div class="row" style="display:flex;">
+            <div class="col-4 col-md-4"  style="display:flex;">
+                <img  src="{% static 'images/logos/logo.png' %}" class="logo_ico" alt="logo" style=" width: 9rem !important; height: auto!important;"/>
+            </div>
+            <div class="col-6 col-md-6 " >
+
+              <p style="display: inline-block; margin: 3px;" class="body-font text-white"> طرق الدفع الألكترونى</p>
+                             <img style="display: inline-block; margin: 5px;" width="50" height="50" src="{% static 'images/mada.svg' %}" alt="logo"/>
+                <i style=" display: inline-block; margin: 5px;" class="fa fa-paypal fa-lg text-white"  aria-hidden="true"></i>
+           <i style="display: inline-block; margin: 5px;;" class="fa fa-cc-mastercard fa-lg text-white" aria-hidden="true"></i>
+<i class="fa fa-cc-visa fa-lg text-white" aria-hidden="true" style="display: inline-block; margin: 5px;"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+

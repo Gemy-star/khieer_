@@ -26,7 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 
@@ -39,13 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'main',
+    'khieer',
     # 3rd party package
     'django_filters',
     'compressor',
 
     'xhtml2pdf',
 ]
-
 
 AUTH_USER_MODEL = 'accounts.User'
 

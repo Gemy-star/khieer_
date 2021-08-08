@@ -1,0 +1,135 @@
+{% extends 'main.html' %}
+{%  load static %}
+{% block title %}  عن الوقف {% endblock title %}
+{% block style %}
+<style>
+ol.abjd {
+  list-style: none;
+}
+
+ol.abjd > li::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: -1.5em;
+  margin-left: 0.5em;
+  text-align: left;
+  direction: ltr;
+}
+
+ol.abjd > li:nth-child(1)::before  { content: ".أ"; }
+ol.abjd > li:nth-child(2)::before  { content: ".ب"; }
+ol.abjd > li:nth-child(3)::before  { content: ".جـ"; }
+ol.abjd > li:nth-child(4)::before  { content: ".د"; }
+ol.abjd > li:nth-child(5)::before  { content: ".هـ"; }
+ol.abjd > li:nth-child(6)::before  { content: ".و"; }
+ol.abjd > li:nth-child(7)::before  { content: ".ز"; }
+ol.abjd > li:nth-child(8)::before  { content: ".حـ"; }
+ol.abjd > li:nth-child(9)::before  { content: ".ط"; }
+ol.abjd > li:nth-child(10)::before { content: ".ى"; }
+ol.abjd > li:nth-child(11)::before { content: ".كـ"; }
+ol.abjd > li:nth-child(12)::before { content: ".ل"; }
+ol.abjd > li:nth-child(13)::before { content: ".مـ"; }
+ol.abjd > li:nth-child(14)::before { content: ".ن"; }
+ol.abjd > li:nth-child(15)::before { content: ".س"; }
+ol.abjd > li:nth-child(16)::before { content: ".عـ"; }
+ol.abjd > li:nth-child(17)::before { content: ".ف"; }
+ol.abjd > li:nth-child(18)::before { content: ".صـ"; }
+ol.abjd > li:nth-child(19)::before { content: ".ق"; }
+ol.abjd > li:nth-child(20)::before { content: ".ر"; }
+ol.abjd > li:nth-child(21)::before { content: ".ش"; }
+ol.abjd > li:nth-child(22)::before { content: ".ت"; }
+ol.abjd > li:nth-child(23)::before { content: ".ث"; }
+ol.abjd > li:nth-child(24)::before { content: ".خـ"; }
+ol.abjd > li:nth-child(25)::before { content: ".ذ"; }
+ol.abjd > li:nth-child(26)::before { content: ".ضـ"; }
+ol.abjd > li:nth-child(27)::before { content: ".ظ"; }
+ol.abjd > li:nth-child(28)::before { content: ".غـ"; }
+
+</style>
+
+{% endblock style %}
+
+{% block content %}
+    <section class="hero">
+       <div class="ftco-blocks-cover-1">
+       <!-- data-stellar-background-ratio="0.5" style="background-image: url('images/hero_1.jpg')" -->
+      <div class="site-section-cover overlay" data-stellar-background-ratio="0.5" style="background-image: url('../../../static/images/about_eg.png')">
+        <div class="container">
+          <div class="row align-items-center ">
+
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="text-cursive h5 " style="color: #5DBD7E"> خير السعودية</span>
+              <h1 class="mb-3 font-weight-bold body-font">عن الوقف</h1>
+              <p><a href="{% url 'home-page' %}" class="text-white">الرئيسية</a> <span class="mx-3">/</span> <strong>عن الوقف </strong></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </section>
+
+ <Section>
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+                                  <div class="col-md-5">
+            <img src="{% static 'images/about_new.png' %}" alt="Image" class="img-fluid">
+          </div>
+
+          <div class="col-md-7 ml-auto pl-md-5 ">
+<span class="body-font h5 text-green head-size d-table">عن خير السعودية</span>
+              <hr/>
+            <p class="body-font text-black   d-table" style="direction:rtl"><span>
+
+  مشروع ريادة اجتماعية منظم ذو شخصية اعتبارية ومستقل مالياً يعمل على الربط ما بين فاعل الخير والحالات الأقل حظاً بطريقة ميسرة وهو أحد مشاريع مؤسسة بلد الخير الوقفية المرخصة برقم سجل رقم 1010570915 وصكّ وقفية صادر من محكمة الرياض برقم 401216929  لاستثمار وتنمية مبلغ موقوف قابل للتنمية والاستثمار لاستمرار أهم منتجات مؤسسة بلد الخير الوقفية</span></p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img src="{% static 'images/goals.png' %}" alt="Image" class="img-fluid">
+          </div>
+                         <div class="col-md-7 ml-auto pl-md-5">
+                <span class="body-font h5 text-green head-size list-div  d-table">الأهداف العامة  </span>
+                            <hr/>
+
+            <p class="body-font text-black list-div  d-table" style="font-size: 20px;" ><span>
+</span>تسعى خير السعودية إلى توعية المجتمع بالمفهوم الواسع لأنسنة العمل الخيري والتكافل الاجتماعي وأهمية العطاء بوعي عبر مواقع التواصل الاجتماعي
+            </p>
+
+
+<div class="list-div">
+        <ol class="abjd">
+    <li> توعية المجتمع بالمفهوم الواسع للعطاء بوعي والإلهام والانسنة والتعاطف</li>
+    <li>إعادة التعريف بإبداع باحتياجات الفئات الأقل حظاً وفق نظريات التغيير</li>
+    <li> تفعيل المحتوى المبتكر والتفاعلي عبر التقنيات الحديثة ومنصات التواصل الاجتماعي</li>
+    <li>              تصميم المنتجات الإنسانية والاجتماعية للمجتمعات الداعمة والراغبة في التفاعل</li>
+    <li>              استقطاب الكفاءات التطوعية والعمل على تطوريها وتمكينها وتوظيفها بما يخدم المجتمع</li>
+    <li> العمل على أن يكون العطاء أسلوب حياة </li>
+
+  </ol>
+
+</div>
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+ </Section>
+
+
+
+{% endblock content %}

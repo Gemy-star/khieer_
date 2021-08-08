@@ -1,40 +1,166 @@
-<div class="navbar">
-                <div class="search_div">
-                    <form>
-                      {% csrf_token %}
-<i class="fa fa-search" id="search-icon"></i>
-                        <input id="search-bar" type="text" placeholder="إبحث"  name="search-bar"/>
+{% load static %}
+<header class="site-navbar site-navbar-target"  role="banner">
 
-                    </form>
-                </div>
-<div class="head-nav">
-                    <nav>
 
-                    <div class="container_nav">
-                        <ul>
-                            <li><a href="#"/>الخدمات الألكترونية</a></li>
-                            <li><a href="#"/>إتصل بنا</a></li>
+    <div class="container">
+        <div class="menu-wrap ">
 
-                        </ul>
-                    </div>
+            <span class="d-inline-block d-lg-none"><a href="{% url 'home-page' %}"
+                    class="text-black site-menu-toggle js-menu-toggle py-5"><span
+                        class="icon-menu h3 text-black"></span></a></span>
 
-                </nav>
 
-</div>
-            </div>
+            <nav style="margin-left: 100px;" class="site-navigation text-left mr-auto d-none d-lg-block"
+                role="navigation">
 
-<script>
-    $(() => {
-        $("#search-bar").hide()
-        $("#search-icon").on('click' , (event) => {
-            event.preventDefault();
-            $("#search-bar").show();
+                <ul class="site-menu main-menu js-clone-nav mr-auto ">
+                    <li><a class="nav-link text-cursive" style="font-size:14px;" href="{% url 'home-page' %}"> <img src="{% static 'images/logos/logo.png' %}" class="logo_ico"  /> </a></li>
 
-        });
-           $("#search-icon").on('blur' , (event) => {
-               event.preventDefault();
-            $("#search-bar").hide();
-        });
-    });
-</script>
+                    <li class="nav-item dropdown">
+                        <a style="font-size: 14px;  " class="nav-link dropdown-toggle text-cursive" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            عن الوقف
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                href="{% url 'about-page' %}">
+                                عن خير السعودية
+                            </a>
+                                <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                href="{% url 'ethics' %}">
+                              الخصوصية و الأحكام
+                            </a>
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive" href="{% url 'roaya' %}">
+                                رسالتنا ورؤيتنا
+                            </a>
+                           <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                     href="{% url 'who' %}">
+                                        من نحن  </a>
+{#                                     <a style="font-size: 14px;  " class="dropdown-item text-cursive"#}
+{#                                        href="{% url 'takafel' %}">#}
+{#                                        التكافل الإجتماعى </a>#}
 
+
+                                <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                    href="{% url 'ksa2030' %}"> خير السعودية ضمن 2030</a>
+
+                        </div>
+                    </li>
+                <li class="nav-item dropdown">
+                                <a style="font-size: 14px;  " class="nav-link dropdown-toggle text-cursive" href="#"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    برامجنا
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                        href="{% url 'effect' %}">
+                                        برامج التأثير الأجتماعى  </a>
+                                    <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                        href="{% url 'green-circle' %}">
+                                        الدائره الخضراء</a>
+                                    <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                        href="{% url 'pernamg' %}">
+                                        برنامج التغيير الثقافى و الأثر للجمعيات
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+
+                                </div>
+                </li>
+{% if request.user == null %}
+<li><a style="font-size: 14px;  " href="{% url 'reg-vol' %}" class="nav-link text-cursive">
+                          إنضم معنا</a></li>
+                {% endif %}
+
+                    <li class="nav-item dropdown">
+                        <a style="font-size: 14px;  " class="nav-link dropdown-toggle text-cursive" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+
+                            الخدمات الالكترونية
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          {% if request.user.user_type == null %}
+                    <a href="{% url 'login' %}" class="nav-link text-cursive">
+                            تسجيل الدخول</a>
+                    {% endif %}
+                            {% if request.user.first_name %}
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                href="{% url 'technical-support' %}">
+                                دعم فنى </a>
+{#                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"#}
+{#                                href="{% url 'home-employee' %}">#}
+{#                                لوحة التحكم</a>#}
+                            {% endif %}
+
+
+                            <div class="dropdown-divider"></div>
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                href="{% url 'contact-page' %}">
+                                الشكاوى و الأستفسارات</a>
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive" href="{% url 'faq' %}">
+                                الأسئله الشائعة</a>
+
+{#  <a class="nav-link dropdown-toggle text-cursive" href="#" id="navbarDropdown" role="button"#}
+{#                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">#}
+{##}
+{#                             انضم معنا </a>#}
+{#                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">#}
+{#                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"#}
+{#                                href="{% url 'register-needy' %}">#}
+{#                                مستفيد</a>#}
+{#                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"#}
+{#                                href="{% url 'register-donator' %}">#}
+{#                                فاعل خير</a>#}
+{#                                   <a style="font-size: 14px;  " class="dropdown-item text-cursive"#}
+{#                                    href="{% url 'register-volunteer' %}">الأنضمام كمتطوع#}
+{#                                </a>#}
+{#                                 <a style="font-size: 14px;  " class="dropdown-item text-cursive"#}
+{#                                    href="{% url 'register-trainee' %}">متدرب#}
+{#                                </a>#}
+{#                        </div>#}
+                        </div>
+                    </li>
+                    {% if request.user.user_type %}
+                 <li class="nav-item dropdown">
+                        <a style="font-size: 14px;  " class="nav-link dropdown-toggle text-cursive" href="{% url 'user-profile' %}"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            الصفحه الشخصيه
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                href="#"> {{ request.user.first_name }} </a>
+                            <div class="dropdown-divider"></div>
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive" href="{% url 'logout' %}">
+                                خروج</a>
+
+                        </div>
+                    </li>
+                    {% endif %}
+                                    <li class="nav-item dropdown">
+                        <a style="font-size: 14px;  " class="nav-link dropdown-toggle text-cursive" href="#"
+                            id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            فرص الدعم
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive"
+                                href="{% url 'heba-kheer' %}"> هبة الخير</a>
+                            <div class="dropdown-divider"></div>
+                            <a style="font-size: 14px;  " class="dropdown-item text-cursive" href="{% url 'shop-ksa' %}">
+                                المتجر الألكترونى</a>
+
+                        </div>
+                    </li>
+
+                    <li><a style="font-size: 14px;  " href="{% url 'media_center' %}" class="nav-link text-cursive">
+                            المركز الأعلامى</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+</header>

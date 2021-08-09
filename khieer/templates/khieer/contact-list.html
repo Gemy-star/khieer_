@@ -1,0 +1,59 @@
+{% extends 'dashmain.html' %}
+
+{% block title %}  طلبات الأتصال {% endblock title %}
+
+
+{% block body %}
+
+    <div class="main-content-inner" id="contact-section">
+        <div class="container">
+             <div class="row center">
+                  <div class="col-12 center">
+               <center>
+                        <h2 class="body-font text-blue"  style="font-size: 35px; font-weight: bold;">طلبات الأتصال</h2>
+                 <hr/>
+                    <p class="body-font text-green" style="font-size: 25px">طاقات و أرواح
+                        شبابية خلاقة
+                    </p>
+                   </center>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 bg-home center">
+<table class="table styled-table" style="width: 90%;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">الأسم </th>
+              <th scope="col">العنوان </th>
+      <th scope="col">الهاتف </th>
+
+      <th scope="col"> الرسالة </th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+ {% for contact in contacts %}
+     <tr>
+      <th scope="row">{{ contact.pk }}</th>
+      <td>{{ contact.name }} </td>
+      <td>{{ contact.address }}</td>
+      <td>{{ contact.phone }}</td>
+      <td>{{ contact.message }}</td>
+
+    </tr>
+
+  {% endfor %}
+
+  </tbody>
+</table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock body %}
+

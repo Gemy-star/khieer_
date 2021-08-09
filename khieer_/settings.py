@@ -41,8 +41,6 @@ INSTALLED_APPS = [
     'khieer',
     # 3rd party package
     'django_filters',
-    'compressor',
-
     'xhtml2pdf',
 ]
 
@@ -140,14 +138,5 @@ STATICFILES_DIRS = [
 ]
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_FINDERS = [
-    'compressor.finders.CompressorFinder',
-]
-COMPRESS_PRECOMPILERS = (
-    ('text/x-scss', 'django_libsass.SassCompiler'),
-)
-COMPRESS_ROOT = STATIC_ROOT
-COMPRESS_OFFLINE = True
-LIBSASS_OUTPUT_STYLE = 'compressed'
-STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+

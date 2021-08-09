@@ -105,8 +105,24 @@ def courses_list(request):
 
 
 def technical_list(request):
-    problems = TechnicalSupport.objects.all()
-    return render(request, 'main/technical_list.html', context={"problems": problems})
+    context = {"techs": TechnicalSupport.objects.all()}
+    return render(request, 'khieer/technical-list.html', context)
+
+
+def contact_list(request):
+    context = {"contacts": Contact.objects.all()}
+    return render(request, 'khieer/contact-list.html', context)
+
+
+def trainers_list(request):
+    context = {"trainers": Trainer.objects.all()}
+    return render(request, 'khieer/trainers_list.html', context)
+
+
+def volunteer_list(request):
+    context = {"volunteers": Volunteer.objects.all()}
+    return render(request, 'khieer/volunteer-list.html', context)
+
 
 
 class VolunteerAllReport(View):

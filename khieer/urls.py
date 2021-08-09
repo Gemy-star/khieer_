@@ -12,6 +12,10 @@ urlpatterns = [
     path('courses/report', views.CourseAllReport.as_view(), name='course-report'),
     path('hebas/report', views.HebaAllReport.as_view(), name='heba-report'),
     path('course/list', views.courses_list, name='course-list'),
+    path('volunteers/list', views.volunteer_list, name='volunteer-list'),
+    path('trainers/list', views.trainers_list, name='trainers-list'),
+    path('contact/list', views.contact_list, name='contact-list'),
+    path('technical/list', views.technical_list, name='techs-list'),
     path('course/request/<int:pk>', views.course_request, name='course-request'),
 
 ]

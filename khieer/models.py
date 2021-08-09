@@ -32,7 +32,7 @@ class TechnicalSupport(models.Model):
 
 
 class Trainer(models.Model):
-    image = models.ImageField(verbose_name='لوجو الدوره', null=True)
+    image = models.ImageField(verbose_name='Image', null=True)
     email = models.EmailField(
         verbose_name=_('email address'), max_length=255, unique=True
     )

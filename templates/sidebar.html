@@ -12,19 +12,22 @@
                     {% if request.user.user_type == 1 or request.user.user_type == 2 or request.user.user_type == 3 %}
                     <li class="active">
                         <a href="javascript:void(0)" aria-expanded="true"><span
-                                class="body-font">خير السعوديه</span></a>
+                                class="body-font">لوحة التحكم</span></a>
                         <ul class="collapse">
-                            <li><a class="body-font" href="{% url 'home-page' %}">الرئيسيه</a></li>
-
-                            <li class="body-font"><a class="body-font" href="{% url 'register-employee' %}">إضافة مشرف أساسى
+                            <li><a class="body-font" href="{% url 'techs-list' %}">الدعم الفنى</a></li>
+                           {% if request.user.user_type != 3 %}
+                                <li class="body-font"><a class="body-font" href="{% url 'emp-list' %}">المشرفين
                                     </a>
                             </li>
-                           <li class="body-font"><a class="body-font" href="{% url 'register-trainer' %}">
-                                    إضافة مدرب</a> </li>
-
-                            <li class="body-font"><a class="body-font"  href="{% url 'register-helper' %}">
-                                    إضافة مشرف متعاون</a>
+                               {% endif %}
+                               <li class="body-font"><a class="body-font" href="{% url 'volunteer-list' %}">المتطوعيين
+                                    </a>
                             </li>
+                           <li class="body-font"><a class="body-font" href="{% url 'trainers-list' %}">
+                                   المدربين</a> </li>
+                         <li><a class="body-font" href="{% url 'techs-list' %}">الدعم الفنى</a></li>
+                         <li><a class="body-font" href="{% url 'contact-list' %}">طلبات الأتصال</a></li>
+
 
                         </ul>
                     </li>

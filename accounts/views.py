@@ -134,3 +134,8 @@ def edit_user_info(request, pk):
         user_obj.save()
         return redirect('user-profile')
     return render(request, 'accounts/user_edit.html', context={"user": user_obj})
+
+
+def employees_list(request):
+    context = {"employees": User.objects.exclude(user_type=1)}
+    return render(request, 'accounts/employees_list.html', context=context)

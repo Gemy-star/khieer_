@@ -402,7 +402,7 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: none;
     box-shadow: none; }
   .dropdown-menu.show {
-            background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
+            background: #5DBD7E!important;
 
   }
    .dropdown-menu.show a {
@@ -414,18 +414,18 @@ h1, h2, h3, h4, h5,
    }
 
   .btn.btn-teal {
-        background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
+        background:  #5DBD7E!important;
  }
     .btn.btn-primary {
-    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important; }
+    background:  #5DBD7E!important; }
    .btn.btn-green {
-    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important; }
+    background:  #5DBD7E!important; }
     .btn.btn-blue {
     background: #3b5998; }
    .btn.btn-login {
     background: #2D6D93; }
   .btn.btn-danger {
-    background: linear-gradient(to right, #2D6D93, #5DBD7E) !important;
+    background:  #5DBD7E !important;
   }
   .btn.btn-outline-white {
     border-color: #fff;
@@ -1986,7 +1986,7 @@ align-items: end;
 .menu-wrap {
      width: fit-content;
     padding: 0;
-    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
+    background:  #5DBD7E!important;
     height: fit-content;
     margin: 0 auto !important;
 }
@@ -2548,7 +2548,7 @@ h1 , h2 , h3 , h4 , h5 , span , p{
   .menu-wrap {
      width: fit-content;
     padding: 0;
-    background: linear-gradient(to right, #2D6D93, #5DBD7E);
+    background:  #5DBD7E;
     height: fit-content;
     margin: 0 auto !important;
 }
@@ -2573,14 +2573,14 @@ h1 , h2 , h3 , h4 , h5 , span , p{
 }
 
 .btn_grad {
-  background:linear-gradient(to right, #2D6D93, #5DBD7E) !important;
+  background: #5DBD7E !important;
 }
 /* display 3 */
 @media (min-width: 768px) {
 .menu-wrap {
      width: fit-content;
     padding: 0;
-    background:linear-gradient(to right, #2D6D93, #5DBD7E);
+    background: #5DBD7E;
     height: fit-content;
     margin: 0 auto !important;
 }
@@ -3080,7 +3080,7 @@ h6 {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
+    background:  #5DBD7E!important;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -3099,7 +3099,7 @@ h6 {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-    background: linear-gradient(to right, #2D6D93, #5DBD7E)!important;
+    background:  #5DBD7E!important;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */

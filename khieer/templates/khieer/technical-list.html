@@ -1,0 +1,54 @@
+{% extends 'dashmain.html' %}
+
+{% block title %}  الدعم الفنى {% endblock title %}
+
+
+{% block body %}
+
+    <div class="main-content-inner" id="contact-section">
+        <div class="container">
+             <div class="row center">
+                  <div class="col-12 center">
+               <center>
+                        <h2 class="body-font text-black-50" >الدعم الفنى</h2>
+                 <hr/>
+                    <p class="body-font text-green" style="font-size: 25px">طاقات و أرواح
+                        شبابية خلاقة
+                    </p>
+                   </center>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 bg-home center">
+<table class="table styled-table" style="width: 90%;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">الأسم </th>
+      <th scope="col"> الرسالة </th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+ {% for tech in techs %}
+     <tr>
+      <th scope="row">{{ tech.pk }}</th>
+      <td>{{ tech.name }} </td>
+      <td>{{ tech.message }}</td>
+
+    </tr>
+
+  {% endfor %}
+
+  </tbody>
+</table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock body %}
+

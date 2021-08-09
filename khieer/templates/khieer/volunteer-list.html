@@ -1,0 +1,70 @@
+{% extends 'dashmain.html' %}
+
+{% block title %}  المتطوعين {% endblock title %}
+
+
+{% block body %}
+
+    <div class="main-content-inner" id="contact-section">
+        <div class="container">
+             <div class="row center">
+                  <div class="col-12 center">
+               <center>
+                        <h2 class="body-font text-blue"  style="font-size: 35px; font-weight: bold;">المتطوعين</h2>
+                 <hr/>
+                    <p class="body-font text-green" style="font-size: 25px">طاقات و أرواح
+                        شبابية خلاقة
+                    </p>
+                   </center>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 bg-home center">
+<table class="table styled-table" style="width: 90%;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">الأسم </th>
+      <th scope="col"> البريد الألكترونى </th>
+      <th scope="col">الهاتف</th>
+      <th scope="col">الجنس</th>
+      <th scope="col">الدراسة</th>
+      <th scope="col">التفرغ</th>
+      <th scope="col">تاريخ التقدم</th>
+      <th scope="col"> الأهداف</th>
+      <th scope="col"> المهنة</th>
+        <th scope="col"> المهارات</th>
+                <th scope="col"> السيرة الذاتية</th>
+
+    </tr>
+  </thead>
+  <tbody>
+ {% for vol in volunteers %}
+     <tr>
+      <th scope="row">{{ vol.pk }}</th>
+      <td>{{ vol.first_name }} {{ vol.last_name }}</td>
+      <td>{{ vol.email }}</td>
+      <td>{{ vol.phone }}</td>
+         <td>{{ vol.gender }}</td>
+           <td>{{ vol.study }}</td>
+           <td>{{ vol.time }}</td>
+         <td>{{ vol.date_received }}</td>
+           <td>{{ vol.goals }}</td>
+           <td>{{ vol.job }}</td>
+           <td>{{ vol.skills }}</td>
+           <td><a class="btn btn-teal text-white btn-sm" href="{{ vol.cv.file }}">تحميل</a></td>
+    </tr>
+
+  {% endfor %}
+
+  </tbody>
+</table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock body %}
+

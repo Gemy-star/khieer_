@@ -56,19 +56,15 @@ def home_employee(request):
 def heba_kheer(request):
     if request.method == 'GET':
         return render(request, 'khieer/heba-kheer.html')
-    elif request.method == 'POST' and request.is_ajax:
+    elif request.method == 'POST':
         name = request.POST.get('name')
         phone = request.POST.get('phone')
         address = request.POST.get('address')
-        national_id = request.POST.get('national_id')
         ammount = request.POST.get('ammount')
         heba_obj = HebaKheer(
-            address=address, phone=phone, national_id=national_id, name=name, ammount=ammount)
+            address=address, phone=phone, name=name, ammount=ammount)
         heba_obj.save()
-        if heba_obj.pk:
-            return JsonResponse({"data": 1})
-        else:
-            return JsonResponse({"data": -1})
+        return redirect('heba-pay')
 
 
 def add_technical(request):
@@ -99,8 +95,12 @@ def course_request(request, pk):
     return render(request, 'khieer/request_course.html', context)
 
 
-def courses_list(request):
-    context = {"courses": Course.objects.all()}
+def heba_payment(request):
+    return render(request, 'khieer/payment-heba.html')
+
+
+def courses_list(request, pk):
+    context = {"courses": Course.objects.filter(category_id=pk)}
     return render(request, 'khieer/bag-list.html', context)
 
 
@@ -123,6 +123,10 @@ def volunteer_list(request):
     context = {"volunteers": Volunteer.objects.all()}
     return render(request, 'khieer/volunteer-list.html', context)
 
+
+def cat_list(request):
+    context = {"cats": Category.objects.all()}
+    return render(request, 'khieer/all_cats.html', context)
 
 
 class VolunteerAllReport(View):

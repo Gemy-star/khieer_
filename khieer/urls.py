@@ -11,11 +11,13 @@ urlpatterns = [
     path('vol/report', views.VolunteerAllReport.as_view(), name='vol-report'),
     path('courses/report', views.CourseAllReport.as_view(), name='course-report'),
     path('hebas/report', views.HebaAllReport.as_view(), name='heba-report'),
-    path('course/list', views.courses_list, name='course-list'),
+    path('categories/list', views.cat_list, name='cat-list'),
+    path('course/list/<int:pk>', views.courses_list, name='course-list'),
     path('volunteers/list', views.volunteer_list, name='volunteer-list'),
     path('trainers/list', views.trainers_list, name='trainers-list'),
     path('contact/list', views.contact_list, name='contact-list'),
     path('technical/list', views.technical_list, name='techs-list'),
     path('course/request/<int:pk>', views.course_request, name='course-request'),
+    path('payment/heba', views.heba_payment, name='heba-pay'),
 
 ]

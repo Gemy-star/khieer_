@@ -1458,6 +1458,7 @@ table.dbkit-table tr td {
 }
 
 .body-font {
+  align-content: flex-start;
 font-family: 'Almarai', sans-serif;
   font-size: medium;
   font-weight: lighter;

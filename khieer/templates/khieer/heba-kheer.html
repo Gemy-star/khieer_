@@ -107,9 +107,9 @@
     </div>
                         <div class="card-footer">
                             <div class="form-group row">
-                                <div class="col-md-12" id="btn add">
+                                <div class="col-md-12" >
                                     <center>
-                                        <button type="submit" id="btn_heba"
+                                        <button type="submit"
                                                 class="btn btn-teal btn-custom-1 body-font text-white"> إرسال
                                         </button>
                                     </center>
@@ -150,60 +150,3 @@
 
 
 
-{% block javascript %}
-    <script>
-        $(() => {
-
-            $("#btn_heba").on('click', event => {
-
-   if ($("input[type=checkbox]").prop(
-                      ":checked"))  {
-        event.preventDefault();
-                $.ajax({
-                    method: 'POST',
-                    url: '{% url 'heba-kheer' %}',
-                    data: {
-                        'name': $('#name').val(),
-                        'national_id': $('#national_id').val(),
-                        'address': $('#address').val(),
-                        'phone': $('#phone').val(),
-                        'ammount': $('#ammount').val(),
-                        'csrfmiddlewaretoken': $('input[name=csrfmiddlewaretoken]').val()
-                    },
-                    success: function (data) {
-                        if (data.data === 1) {
-                            swal({
-                                title: "تم",
-                                text: "تم  بنجاح",
-                                icon: "success",
-                                button: "إغلاق",
-                            });
-                            window.location.href = "{% url 'home-page' %}"
-                        } else {
-                            swal({
-                                title: "خطا",
-                                text: "من فضلك راجع البيانات",
-                                icon: "error",
-                                button: "إغلاق",
-                            });
-                        }
-                    },
-                    error: function (error) {
-                        alert(error.responseText)
-                    }
-                });
-    }else {
-        event.preventDefault();
-         swal({
-                                title: "خطا",
-                                text: "من فضلك اضغط على التأكيد",
-                                icon: "error",
-                                button: "إغلاق",
-                            });
-    }
-
-
-            });
-        });
-    </script>
-{% endblock javascript %}

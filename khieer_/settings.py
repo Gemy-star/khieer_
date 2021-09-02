@@ -139,4 +139,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+API_ENDPOINT = 'https://secure.paytabs.sa/payment/request'
+PAYTAB_API_SERVERKEY = 'SKJNNWHTJT-J22NNW6TLL-KLLJT6TGN9'
+PAYTAB_API_CLIENTKEY = 'C7KMMK-VVRV6M-MQQVG7-G7Q2PV'
+PROFILE_KEY = 75985

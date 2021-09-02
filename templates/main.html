@@ -20,14 +20,11 @@
     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/fonts/flaticon/font/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/soft-ui-dashboard.css' %}">
-
     {% block style %} {% endblock style %}
-
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 <style>
     .ml-auto{
         margin-left: auto !important;
@@ -75,6 +72,7 @@
     <script src="{% static 'js/sweetalert.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+{% block javascript %}  {% endblock javascript %}
 
 <script>
     $(() => {
@@ -156,9 +154,6 @@ function Whatsapp() {
   window.location.href = "https://api.whatsapp.com/send?phone=00966504806849"
 }
 </script>
-{% block javascript %}
-
-{% endblock javascript %}
 </body>
 
 </html>

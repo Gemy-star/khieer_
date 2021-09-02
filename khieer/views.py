@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 from django.core.files.storage import FileSystemStorage
 from django.http import JsonResponse, HttpResponse
@@ -7,6 +8,8 @@ from accounts.models import User
 from django.shortcuts import render, redirect
 from khieer.models import Contact, HebaKheer, TechnicalSupport, Trainer, Course, Category, Volunteer, CourseRequest
 from khieer_.utils import render_to_pdf
+from khieer_.settings import PROFILE_KEY, PAYTAB_API_SERVERKEY, API_ENDPOINT
+import requests
 
 
 def add_greenCourse(request):
@@ -63,8 +66,26 @@ def heba_kheer(request):
         ammount = request.POST.get('ammount')
         heba_obj = HebaKheer(
             address=address, phone=phone, name=name, ammount=ammount)
+        payload = {
+            "profile_id": PROFILE_KEY,
+            "tran_type": "sale",
+            "tran_class": "ecom",
+            "cart_description": "هبة مساعدة لجمعية خير السعودية",
+            "cart_id": "50",
+            "cart_currency": "sar",
+            "cart_amount": int(ammount),
+            "callback": "https://khieer.com/about",
+            "return": "https://khieer.com/"
+        }
+        headers = {
+            "authorization": PAYTAB_API_SERVERKEY,
+            "Content-Type": 'application/json; charset=utf-8'
+        }
+        r = requests.post(API_ENDPOINT, data=json.dumps(payload), headers=headers)
+        data = json.dumps(r.json())
+        content = json.loads(data)
         heba_obj.save()
-        return redirect('heba-pay')
+        return redirect(content['redirect_url'])
 
 
 def add_technical(request):

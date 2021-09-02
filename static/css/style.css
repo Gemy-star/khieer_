@@ -13,6 +13,9 @@ html {
   height: auto;
 }
 
+.row {
+  overflow-x: hidden !important;
+}
 *, *::before, *::after {
   box-sizing: inherit;
 }
